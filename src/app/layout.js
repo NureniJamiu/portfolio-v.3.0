@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
     <PrimeReactProvider value={{ unstyled: true, pt: Tailwind }}>
       <html lang="en">
         <body
-          className={`${inter.className} relative bg-[#F3F3F3] dark:bg-[#151515] dark:text-white px-4 max-w-4xl mx-auto`}
+          className={`${inter.className} relative bg-[#F3F3F3] dark:bg-[#151515] dark:text-white px-4 max-w-3xl mx-auto`}
         >
           <Header />
           {children}
