@@ -35,7 +35,7 @@ export default function Home() {
         <div className="flex items-center mt-5">
           <span className="w-36 text-[#727272]">Carbon footprint</span>
           <span className="flex-1 font-[300] ">
-            <code className="bg-[#727272] dark:bg-[#2B2B2B] px-1 rounded group cursor-pointer">
+            <code className="bg-[#B8B8B8] dark:bg-[#2B2B2B] px-1 rounded group cursor-pointer">
               <span className="border-b-[1.5px]  border-b-[#2B2B2B] dark:border-b-[#727272] group-hover:border-b-[#9A8001]">
                 0.09 g of CO<sup>2</sup>
               </span>
@@ -46,7 +46,7 @@ export default function Home() {
         <div className="flex items-center mt-5">
           <span className="w-36 text-[#727272]">Version</span>
           <span className="flex-1 font-[300]">
-            <code className="bg-[#727272] dark:bg-[#2B2B2B] px-1 rounded">
+            <code className="bg-[#B8B8B8] dark:bg-[#2B2B2B] px-1 rounded">
               <span className="">3.0.0-alpha</span>
             </code>
           </span>
@@ -66,7 +66,7 @@ export default function Home() {
         <div className="flex items-center mt-5">
           <span className="w-36 text-[#727272]">Latest commit</span>
           <span className="flex-1 font-[300] ">
-            <code className="bg-[#727272] dark:bg-[#2B2B2B] px-1 rounded group cursor-pointer">
+            <code className="bg-[#B8B8B8] dark:bg-[#2B2B2B] px-1 rounded group cursor-pointer">
               <span className="border-b-[1.5px] border-b-[#2B2B2B] dark:border-b-[#727272] group-hover:border-b-[#9A8001]">
                 762be99
               </span>
