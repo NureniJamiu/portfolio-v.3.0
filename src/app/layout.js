@@ -7,7 +7,6 @@ import { PrimeReactProvider } from "primereact/api";
 import Tailwind from "primereact/passthrough/tailwind";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import "primeicons/primeicons.css";
-import { Dock, DockIcon } from "@/components/magicui/dock";
 import { DockComponent } from "@/components/custom/DockComponent";
 
 const inter = Inter({ subsets: ["latin"] });
