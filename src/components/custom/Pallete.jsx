@@ -2,7 +2,7 @@ import React from "react";
 
 const Pallete = () => {
   return (
-    <div className="flex items-center gap-[1px]">
+    <div className="w-min flex flex-row-reverse dark:flex-row items-center gap-[1px]">
       <div className="w-11 h-[5px] bg-[#F3F3F3]"></div>
       <div className="w-6 h-[5px] bg-[#F3F3F3]"></div>
       <div className="w-6 h-[5px] bg-[#B8B8B8]"></div>
