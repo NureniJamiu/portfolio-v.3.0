@@ -12,7 +12,7 @@ export default function Home() {
       <div className="mt-10 text-[15px]">
         <div className="flex items-center">
           <span className="w-36 text-[#727272]">Name</span>
-          <span className="flex-1 font-[300]">Nureni Jamiu</span>
+          <span className="flex-1 font-[300]">Nureni O. Jamiu</span>
         </div>
         <Divider />
         <div className="flex items-center mt-5">
