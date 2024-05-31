@@ -55,7 +55,7 @@ export default function Home() {
         <div className="flex items-center mt-5">
           <span className="w-36 text-[#727272]">View source</span>
           <Link
-            href="#"
+            href="https://github.com/NureniJamiu/portfolio-v.3.0"
             target="_blank"
             className="inline font-[300] border-b-[1.5px] border-b-[#727272] hover:border-b-[#9A8001]"
           >
