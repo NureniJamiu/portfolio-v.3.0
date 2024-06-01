@@ -14,25 +14,25 @@ export default function Home() {
           <span className="w-36 text-[#727272]">Name</span>
           <span className="flex-1 font-[300]">Nureni O. Jamiu</span>
         </div>
-        <Divider />
-        <div className="flex items-center mt-5">
+        <Divider type="border-dashed" />
+        <div className="flex items-center mt-3">
           <span className="w-36 text-[#727272]">Location</span>
           <span className="flex-1 font-[300]">Lagos, Nigeria</span>
         </div>
-        <Divider />
-        <div className="flex items-center mt-5">
+        <Divider type="border-dashed" />
+        <div className="flex items-center mt-3">
           <span className="w-36 text-[#727272]">Work</span>
           <span className="flex-1 font-[300]">
             Web Developer at Boughview Innovations
           </span>
         </div>
-        <Divider />
-        <div className="flex items-center mt-5">
+        <Divider type="border-dashed" />
+        <div className="flex items-center mt-3">
           <span className="w-36 text-[#727272]">Colophon</span>
           <span className="flex-1 font-[300]">Nextjs, TailwindCSS, Inter</span>
         </div>
-        <Divider />
-        <div className="flex items-center mt-5">
+        <Divider type="border-dashed" />
+        <div className="flex items-center mt-3">
           <span className="w-36 text-[#727272]">Carbon footprint</span>
           <span className="flex-1 font-[300] ">
             <code className="bg-[#B8B8B8] dark:bg-[#2B2B2B] px-1 rounded group cursor-pointer">
@@ -42,8 +42,8 @@ export default function Home() {
             </code>
           </span>
         </div>
-        <Divider />
-        <div className="flex items-center mt-5">
+        <Divider type="border-dashed" />
+        <div className="flex items-center mt-3">
           <span className="w-36 text-[#727272]">Version</span>
           <span className="flex-1 font-[300]">
             <code className="bg-[#B8B8B8] dark:bg-[#2B2B2B] px-1 rounded">
@@ -51,8 +51,8 @@ export default function Home() {
             </code>
           </span>
         </div>
-        <Divider />
-        <div className="flex items-center mt-5">
+        <Divider type="border-dashed" />
+        <div className="flex items-center mt-3">
           <span className="w-36 text-[#727272]">View source</span>
           <Link
             href="https://github.com/NureniJamiu/portfolio-v.3.0"
@@ -62,8 +62,8 @@ export default function Home() {
             nurenijamiu/nurenijamiu.me
           </Link>
         </div>
-        <Divider />
-        <div className="flex items-center mt-5">
+        <Divider type="border-dashed" />
+        <div className="flex items-center mt-3">
           <span className="w-36 text-[#727272]">Latest commit</span>
           <span className="flex-1 font-[300] ">
             <code className="bg-[#B8B8B8] dark:bg-[#2B2B2B] px-1 rounded group cursor-pointer">
@@ -73,7 +73,7 @@ export default function Home() {
             </code>
           </span>
         </div>
-        <Divider />
+        <Divider type="border-dashed" />
       </div>
     </main>
   );
