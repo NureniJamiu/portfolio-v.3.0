@@ -20,21 +20,23 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-2">
             <Link
               href="#"
-              className="w-auto h-auto p-[10px] bg-[#CCCCCC] dark:bg-[#2b2b2b] text-[#2b2b2b] dark:text-[#B8B8B8] hover:text-black hover:dark:text-white rounded-xl"
+              className="text-[14px] text-[#2b2b2b] dark:text-[#B8B8B8] hover:text-black hover:dark:text-white group"
             >
-              <LinkedinIcon size={20} />
+              <span className="group-hover:underline">Linkedin</span>{" "}
+              <span className="group-hover:no-underline"> /</span>
             </Link>
             <Link
               href="#"
-              className="w-auto h-auto p-[10px] bg-[#CCCCCC] dark:bg-[#2b2b2b] text-[#2b2b2b] dark:text-[#B8B8B8] hover:text-black hover:dark:text-white  rounded-xl"
+              className="text-[14px] text-[#2b2b2b] dark:text-[#B8B8B8] hover:text-black hover:dark:text-white   group"
             >
-              <BirdIcon size={20} />
+              <span className="group-hover:underline">Twitter</span>{" "}
+              <span className="group-hover:no-underline"> /</span>
             </Link>
             <Link
               href="#"
-              className="w-auto h-auto p-[10px] bg-[#CCCCCC] dark:bg-[#2b2b2b] text-[#2b2b2b] dark:text-[#B8B8B8] hover:text-black hover:dark:text-white  rounded-xl"
+              className="text-[14px] text-[#2b2b2b] dark:text-[#B8B8B8] hover:text-black hover:dark:text-white  hover:underline"
             >
-              <MailIcon size={20} />
+              Gmail
             </Link>
           </div>
         </div>
