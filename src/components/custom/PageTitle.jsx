@@ -1,6 +1,4 @@
 import { ArrowDownRight } from "lucide-react";
-import { root } from "postcss";
-import React from "react";
 import Divider from "./Divider";
 
 const PageTitle = ({ title, description }) => {
