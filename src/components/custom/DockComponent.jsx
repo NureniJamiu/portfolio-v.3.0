@@ -5,7 +5,7 @@ import Link from "next/link";
 export function DockComponent() {
   return (
     <div className="fixed bottom-0 left-0 w-full flex justify-center">
-      <Dock className="flex bg-white dark:bg-black">
+      <Dock className="flex bg-white dark:bg-[#111111]">
         <DockIcon>
           <Link href="/">
             <Icons.home className="h-6 w-6" />
