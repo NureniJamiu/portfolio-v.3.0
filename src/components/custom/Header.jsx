@@ -3,8 +3,6 @@ import Pallete from "./Pallete";
 import Divider from "./Divider";
 import Link from "next/link";
 import ThemeSwitcher from "./ThemeSwitcher";
-import { BirdIcon, LinkedinIcon, MailIcon, XIcon } from "lucide-react";
-import { Separator } from "../ui/separator";
 
 const Header = () => {
   return (
@@ -54,7 +52,6 @@ const Header = () => {
         </div>
       </div>
       <Divider />
-      {/* <Separator /> */}
     </>
   );
 };
