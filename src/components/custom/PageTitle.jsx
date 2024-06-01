@@ -3,7 +3,7 @@ import Divider from "./Divider";
 
 const PageTitle = ({ title, description }) => {
   return (
-    <div className="mt-36">
+    <div className="mt-44">
       <div className="flex items-end gap-1">
         <h4 className="font-semibold text-[15px]">{title}</h4>
         <ArrowDownRight size={15} />
