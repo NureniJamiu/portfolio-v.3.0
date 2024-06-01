@@ -36,7 +36,7 @@ export default function Home() {
           <span className="w-36 text-[#727272]">Carbon footprint</span>
           <span className="flex-1 font-[300] ">
             <code className="bg-[#B8B8B8] dark:bg-[#2B2B2B] px-1 rounded group cursor-pointer">
-              <span className="border-b-[1.5px]  border-b-[#2B2B2B] dark:border-b-[#727272] group-hover:border-b-[#9A8001]">
+              <span className="border-b-[1.5px]  border-b-[#2B2B2B] dark:border-b-[#727272] group-hover:border-b-[#673de6]">
                 0.09 g of CO<sup>2</sup>
               </span>
             </code>
@@ -57,7 +57,7 @@ export default function Home() {
           <Link
             href="https://github.com/NureniJamiu/portfolio-v.3.0"
             target="_blank"
-            className="inline font-[300] border-b-[1.5px] border-b-[#727272] hover:border-b-[#9A8001]"
+            className="inline font-[300] border-b-[1.5px] border-b-[#727272] hover:border-b-[#673de6]"
           >
             nurenijamiu/nurenijamiu.me
           </Link>
@@ -67,7 +67,7 @@ export default function Home() {
           <span className="w-36 text-[#727272]">Latest commit</span>
           <span className="flex-1 font-[300] ">
             <code className="bg-[#B8B8B8] dark:bg-[#2B2B2B] px-1 rounded group cursor-pointer">
-              <span className="border-b-[1.5px] border-b-[#2B2B2B] dark:border-b-[#727272] group-hover:border-b-[#9A8001]">
+              <span className="border-b-[1.5px] border-b-[#2B2B2B] dark:border-b-[#727272] group-hover:border-b-[#673de6]">
                 762be99
               </span>
             </code>
