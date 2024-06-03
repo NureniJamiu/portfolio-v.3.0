@@ -30,6 +30,10 @@ const MarkdownComponent = ({ children }) => {
               />
             );
           },
+          li(props) {
+            const { node, ...rest } = props;
+            return <li {...rest} className="list-disc list-inside" />;
+          },
         }}
       >
         {children}

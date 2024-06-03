@@ -73,3 +73,16 @@ export const moreLinks = [
     description: "Non-exhaustive list of key life and  work events",
   },
 ];
+
+export const designResources = `
+  - [dribbble.com](https://dribbble.com)
+  - [behance.com](https://www.behance.net)
+  - [awwwards.com](https://www.awwwards.com)
+  - [smashingmagazine.com](https://www.smashingmagazine.com)
+  - [canva.com](https://www.canva.com)
+  - [unsplash.com](https://unsplash.com)
+  - [fonts.google.com](https://fonts.google.com)
+  - [color.adobe.com](https://color.adobe.com)
+  - [fontawesome.com](https://fontawesome.com)
+  - [igma.com](https://www.figma.com)
+`;
