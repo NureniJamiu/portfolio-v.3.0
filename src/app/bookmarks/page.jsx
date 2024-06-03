@@ -1,39 +1,10 @@
 import Divider from "@/components/custom/Divider";
 import MarkdownComponent from "@/components/custom/MarkdownComponent";
 import PageTitle from "@/components/custom/PageTitle";
+import { markdown } from "@/mock-data/mockData";
 import React from "react";
 
 const Page = () => {
-  const markdown = [
-    {
-      date: "2024-06-01",
-      title: "[Understanding AI](https://example.com/understanding-ai)",
-      url: "understandingai.com",
-      body: "> The future of AI is not just about machines, but about enhancing human capabilities. - John Doe\n\n",
-    },
-    {
-      date: "2024-06-02",
-      title:
-        "[The Basics of Machine Learning](https://example.com/basics-of-ml)",
-      url: "basics.com",
-      body: '> Machine Learning is the study of computer algorithms that improve automatically through experience." - Jane Smith',
-    },
-    {
-      date: "2024-06-03",
-      title:
-        "[Deep Learning Demystified](https://example.com/deep-learning-demystified)",
-      url: "deeplearning.com",
-      body: ">Deep Learning is a complex field that deals with neural networks with many layers. To get started, read the [Deep Learning Introduction](https://example.com/dl-introduction)",
-    },
-    {
-      date: "2024-06-04",
-      title:
-        "[Exploring Natural Language Processing](https://example.com/nlp-exploration)",
-      url: "nlpexploration.com",
-      body: '>Natural *Language Processing* (NLP) enables machines to understand human language. An excellent starting point is the [NLP Fundamentals](https://example.com/nlp-fundamentals)."NLP is a critical component in the interaction between humans and machines." - Michael Brown',
-    },
-  ];
-
   return (
     <div className="pb-20">
       <PageTitle
