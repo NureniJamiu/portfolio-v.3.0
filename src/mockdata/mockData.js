@@ -192,7 +192,7 @@ export const designResources = `
   - [fontawesome.com](https://fontawesome.com)
   - [figma.com](https://www.figma.com)
 `
-export const bookmarksTableHeader = ['name', 'description', 'url', 'created_at']
+export const bookmarksTableHeader = ['title', 'body', 'url', 'actions']
 
 export const projectsTableHeader = [
     'image',

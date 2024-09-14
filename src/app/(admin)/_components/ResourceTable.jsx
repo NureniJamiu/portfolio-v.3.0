@@ -1,24 +1,17 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
 import {
     Table,
     TableBody,
-    TableCell,
     TableHead,
     TableHeader,
-    TableRow,
-} from '@/components/ui/table'
-import { MoreHorizontal } from 'lucide-react'
+    TableRow
+} from '@/components/ui/table';
+import BookmarkTableRow from './BookmarkTableRow';
 
 const ResourceTable = ({ headers, data }) => {
+    console.log('Headers:', headers);
+    console.log('Data:', data);
     return (
         <Table>
             <TableHeader>
@@ -45,39 +38,7 @@ const ResourceTable = ({ headers, data }) => {
                 {data.map((item, index) => {
                     return (
                         <TableRow key={index}>
-                            {Object.keys(item).map(key => (
-                                <TableCell key={key} className="font-medium">
-                                    {item[key]}
-                                </TableCell>
-                            ))}
-                            <TableCell>
-                                <DropdownMenu>
-                                    <DropdownMenuTrigger asChild>
-                                        <Button
-                                            aria-haspopup="true"
-                                            size="icon"
-                                            variant="ghost">
-                                            <MoreHorizontal className="h-4 w-4" />
-                                            <span className="sr-only">
-                                                Toggle menu
-                                            </span>
-                                        </Button>
-                                    </DropdownMenuTrigger>
-                                    <DropdownMenuContent
-                                        align="end"
-                                        className="bg-white dark:bg-black">
-                                        <DropdownMenuLabel>
-                                            Actions
-                                        </DropdownMenuLabel>
-                                        <DropdownMenuItem>
-                                            Edit
-                                        </DropdownMenuItem>
-                                        <DropdownMenuItem>
-                                            Delete
-                                        </DropdownMenuItem>
-                                    </DropdownMenuContent>
-                                </DropdownMenu>
-                            </TableCell>
+                            <BookmarkTableRow item={item} />
                         </TableRow>
                     )
                 })}

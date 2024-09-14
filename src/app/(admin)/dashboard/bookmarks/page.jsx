@@ -1,10 +1,17 @@
+import { createClient } from '@/utils/supabase/server'
 import AddBookmark from '../../_components/AddBookmark'
 import ResourceCard from '../../_components/ResourceCard'
 import ResourceTable from '../../_components/ResourceTable'
 
-import { bookmarks, bookmarksTableHeader } from '@/mockdata/mockData'
+import { bookmarksTableHeader } from '@/mockdata/mockData'
 
-const page = () => {
+const page = async() => {
+    const supabase = createClient()
+    const { data: bookmarks, error } = await supabase
+        .from('bookmarks')
+        .select('*')
+        .order('id', {ascending: false})
+
     return (
         <ResourceCard
             title="Bookmarks"
@@ -14,5 +21,6 @@ const page = () => {
         </ResourceCard>
     )
 }
+
 
 export default page

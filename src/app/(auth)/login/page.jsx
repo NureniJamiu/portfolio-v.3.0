@@ -17,8 +17,6 @@ import { useRouter, useSearchParams } from 'next/navigation'
 import { useState } from 'react'
 import { login, signup } from './actions'
 
-import { pending } from 'react-dom'
-
 const Login = () => {
     const router = useRouter()
     const searchParams = useSearchParams()
@@ -107,9 +105,8 @@ const Login = () => {
                             </div>
                             <Button
                                 formAction={login}
-                                disabled={pending}
                                 className="w-full">
-                                {pending ? 'Loading...' : 'Login'}
+                                Login
                             </Button>
                         </div>
                         <div className="mt-4 text-center text-sm">

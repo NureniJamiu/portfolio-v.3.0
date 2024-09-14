@@ -1,10 +1,11 @@
 'use client'
-
 import MDEditor from '@uiw/react-md-editor'
 
-const CustomMarkdown = ({ value, fnValue, placeholder }) => {
+const CustomMarkdown = ({ name, value, fnValue, placeholder }) => {
     return (
         <MDEditor
+            id={name}
+            name={name}
             value={value}
             onChange={fnValue}
             height="240px"

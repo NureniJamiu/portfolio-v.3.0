@@ -1,4 +1,4 @@
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
 
 const CustomDialog = ({ triggerName, children }) => {
     return (
@@ -9,6 +9,10 @@ const CustomDialog = ({ triggerName, children }) => {
                 </span>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[425px] md:max-w-3xl bg-white dark:bg-black rounded-xl">
+                <DialogHeader>
+                    <DialogTitle>{triggerName}</DialogTitle>
+                    <DialogDescription className="ml-2 text-gray-400 text-sm mb-3 mt-1">// Bookmark something new...</DialogDescription>
+                </DialogHeader>
                 {children}
             </DialogContent>
         </Dialog>
