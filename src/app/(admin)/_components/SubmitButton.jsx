@@ -7,8 +7,8 @@ const SubmitButton = () => {
     const { pending } = useFormStatus()
 
     return (
-        <Button className="w-full" type="submit" disabled={pending}>
-            {pending ? 'Submitting...' : 'Submit'}
+        <Button className="flex item-center justify-center mt-4 w-32" type="submit" disabled={pending}>
+            {pending ? 'Adding...' : 'Add bookmark'}
         </Button>
     )
 }

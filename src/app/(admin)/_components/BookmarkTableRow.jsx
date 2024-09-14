@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { TableCell } from "@/components/ui/table";
 import { MoreHorizontal } from "lucide-react";
+import DeleteBookmarkAlert from "./DeleteBookmarkAlert";
+import EditBookmarkDialog from "./EditBookmarkDialog";
 
 const BookmarkTableRow = ({ item }) => {
   return (
@@ -27,15 +29,15 @@ const BookmarkTableRow = ({ item }) => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent
                     align="end"
-                    className="bg-white dark:bg-black">
-                    <DropdownMenuLabel>
+                    className="bg-white dark:bg-black rounded-xl">
+                    <DropdownMenuLabel className="text-center w-full">
                         Actions
                     </DropdownMenuLabel>
-                    <DropdownMenuItem>
-                        Edit
+                    <DropdownMenuItem onSelect={(e) => e.preventDefault()}>
+                        <EditBookmarkDialog bookmark={item} />
                     </DropdownMenuItem>
-                    <DropdownMenuItem>
-                        Delete
+                    <DropdownMenuItem onSelect={(e) => e.preventDefault()}>
+                        <DeleteBookmarkAlert bookmark={item} />
                     </DropdownMenuItem>
                 </DropdownMenuContent>
             </DropdownMenu>

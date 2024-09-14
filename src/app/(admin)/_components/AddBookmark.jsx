@@ -24,7 +24,7 @@ const AddBookmark = () => {
     return (
         <form action={handleSubmit} ref={formRef}>
             <BookmarkForm />
-            <div className="w-64 mx-auto my-2">
+            <div className="flex justify-end w-full">
                 <SubmitButton />
             </div>
         </form>

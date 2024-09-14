@@ -1,4 +1,3 @@
-import React from 'react'
 import {
     Card,
     CardContent,
@@ -7,7 +6,6 @@ import {
     CardHeader,
     CardTitle,
 } from '@/components/ui/card'
-import CustomDialog from './CustomDialog'
 
 const ResourceCard = ({
     title,
@@ -17,15 +15,13 @@ const ResourceCard = ({
     children,
 }) => {
     return (
-        <Card>
+        <Card className="relative">
+            {/* <CustomDialog triggerName={triggerName} children={triggerContent} /> */}
             <CardHeader className="flex-row items-start justify-between">
                 <div>
                     <CardTitle>{title}</CardTitle>
                     <CardDescription>{description}</CardDescription>
                 </div>
-                <CustomDialog triggerName={triggerName}>
-                    {triggerContent}
-                </CustomDialog>
             </CardHeader>
             <CardContent>{children}</CardContent>
             <CardFooter>

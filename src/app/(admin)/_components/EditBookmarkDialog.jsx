@@ -1,0 +1,63 @@
+"use client"
+
+import { Button } from '@/components/ui/button'
+import {
+    Dialog,
+    DialogContent,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
+} from '@/components/ui/dialog'
+import { useState } from 'react'
+import { updateBookmark } from '../dashboard/bookmarks/actions'
+import BookmarkForm from './BookmarkForm'
+
+const EditBookmarkDialog = ({ bookmark }) => {
+  const [open, setOpen] = useState(false)
+
+  const handleSubmit = async (formData) => {
+    try {
+      const { success, message, error } = await updateBookmark(bookmark.id, formData)
+      if (success) {
+        console.log(message)
+        setOpen(false)
+        // You might want to add some state update or refetch logic here
+      } else {
+        console.error(error)
+      }
+    } catch (error) {
+      console.log("ERROR UPDATING BOOKMARK", error)
+    }
+  }
+
+  const handleOpenChange = (newOpen) => {
+    setOpen(newOpen)
+  }
+
+  const handleEditClick = (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setOpen(true)
+  }
+
+  return (
+    <Dialog size="xl" className="w-full" open={open} onOpenChange={handleOpenChange}>
+      <DialogTrigger asChild>
+        <Button variant="ghost" onClick={handleEditClick} className="w-full p-0 m-0 text-green-500 bg-green-100 hover:text-green-500 hover:bg-green-200">Edit</Button>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-[425px] md:max-w-3xl bg-white dark:bg-black rounded-xl" onClick={(e) => e.stopPropagation()}>
+        <DialogHeader>
+          <DialogTitle>Edit Bookmark</DialogTitle>
+        </DialogHeader>
+        <form action={handleSubmit}>
+          <BookmarkForm initialData={bookmark} />
+          <div className="flex justify-end mt-4">
+            <Button type="submit">Save changes</Button>
+          </div>
+        </form>
+      </DialogContent>
+    </Dialog>
+  )
+}
+
+export default EditBookmarkDialog

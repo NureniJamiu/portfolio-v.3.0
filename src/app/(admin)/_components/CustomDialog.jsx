@@ -1,10 +1,11 @@
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
+import { cn } from '@/lib/utils'
 
-const CustomDialog = ({ triggerName, children }) => {
+const CustomDialog = ({ triggerName, children, className }) => {
     return (
-        <Dialog size="xl" className="bg-green-600 w-full rounded-xl">
+        <Dialog size="xl" className={cn('bg-green-600 w-full rounded-xl')}>
             <DialogTrigger>
-                <span className="inline-block px-5 py-2 text-gray-300 bg-zinc-900 rounded-xl dark:text-zinc-900 dark:bg-gray-300">
+                <span className={cn('inline-block px-5 py-2 text-gray-300 bg-zinc-900 rounded-xl dark:text-zinc-900 dark:bg-gray-300', className)}>
                     {triggerName}
                 </span>
             </DialogTrigger>

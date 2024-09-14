@@ -4,8 +4,8 @@ import { Label } from '@/components/ui/label'
 import { useEffect, useState } from 'react'
 import CustomMarkdown from './CustomMarkdown'
 
-const BookmarkForm = () => {
-    const [body, setBody] = useState('')
+const BookmarkForm = ({ initialData = {} }) => {
+    const [body, setBody] = useState(initialData.body || '')
 
     // Update hidden input when body changes
     useEffect(() => {
@@ -24,6 +24,7 @@ const BookmarkForm = () => {
                         name="title"
                         type="text"
                         placeholder="Enter title..."
+                        defaultValue={initialData.title || ''}
                         required
                         autoFocus
                     />
@@ -35,6 +36,7 @@ const BookmarkForm = () => {
                         name="url"
                         type="text"
                         placeholder="Enter url..."
+                        defaultValue={initialData.url || ''}
                         required
                         autoFocus
                     />
