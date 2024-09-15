@@ -7,7 +7,6 @@ import CustomMarkdown from './CustomMarkdown'
 const BookmarkForm = ({ initialData = {} }) => {
     const [body, setBody] = useState(initialData.body || '')
 
-    // Update hidden input when body changes
     useEffect(() => {
         const hiddenInput = document.getElementById('hidden-body')
         if (hiddenInput) {

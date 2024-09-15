@@ -1,4 +1,3 @@
-import React from "react";
 import Markdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
@@ -32,7 +31,7 @@ const MarkdownComponent = ({ children }) => {
           },
           li(props) {
             const { node, ...rest } = props;
-            return <li {...rest} className="list-disc list-inside" />;
+            return <li {...rest} className="list-[square]" />;
           },
         }}
       >

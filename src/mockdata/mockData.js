@@ -194,6 +194,13 @@ export const designResources = `
 `
 export const bookmarksTableHeader = ['title', 'body', 'url', 'actions']
 
+export const techStack = `
+    - Nextjs
+    - TailwindCSS
+    - Vercel
+    - Firebase
+`
+
 export const projectsTableHeader = [
     'image',
     'name',
