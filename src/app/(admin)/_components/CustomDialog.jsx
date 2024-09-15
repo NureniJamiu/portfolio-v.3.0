@@ -12,7 +12,7 @@ const CustomDialog = ({ triggerName, children, className }) => {
             <DialogContent className="sm:max-w-[425px] md:max-w-3xl bg-white dark:bg-black rounded-xl">
                 <DialogHeader>
                     <DialogTitle>{triggerName}</DialogTitle>
-                    <DialogDescription className="ml-2 text-gray-400 text-sm mb-3 mt-1">// Bookmark something new...</DialogDescription>
+                    <DialogDescription className="ml-2 text-gray-400 text-sm mb-3 mt-1"> &#47;&#47; Bookmark something new...</DialogDescription>
                 </DialogHeader>
                 {children}
             </DialogContent>

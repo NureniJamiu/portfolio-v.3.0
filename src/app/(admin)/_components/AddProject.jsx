@@ -72,11 +72,10 @@ const AddProject = () => {
                     </div>
                     <div>
                         <Input
-                            className="dark:text-black"
+                            className="text-gray-300 dark:text-black"
                             id="picture"
                             type="file"
                             {...register}
-                            className="text-gray-300"
                         />
                         <span className="text-red-500 text-sm ml-2">
                             {errors.image?.message}

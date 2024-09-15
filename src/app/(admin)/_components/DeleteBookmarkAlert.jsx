@@ -48,7 +48,7 @@ const DeleteBookmarkAlert = ({ bookmark }) => {
           <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
           <AlertDialogDescription>
             This action cannot be undone. This will permanently delete the bookmark
-            "{bookmark.title}" from your database.
+            &quot;{bookmark.title}&quot; from your database.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
