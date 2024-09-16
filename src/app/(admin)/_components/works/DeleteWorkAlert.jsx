@@ -14,16 +14,18 @@ import {
 import { Button, buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { useState } from 'react'
-import { deleteBookmark } from '../dashboard/bookmarks/actions'
+import { deleteBookmark } from '../../dashboard/bookmarks/actions'
 
-const DeleteBookmarkAlert = ({ bookmark }) => {
+
+const DeleteWorkAlert = ({ work }) => {
   const [open, setOpen] = useState(false)
   const [loading, setLoading] = useState(false)
 
   const handleDelete = async () => {
     setLoading(true)
     try {
-      const { success, message, error } = await deleteBookmark(bookmark.id)
+        // CHANGE DELETEBOOKMARK TO DELETEWORK
+      const { success, message, error } = await deleteBookmark(work.id)
       if (success) {
         console.log(message)
         setOpen(false)
@@ -32,7 +34,7 @@ const DeleteBookmarkAlert = ({ bookmark }) => {
         console.error(error)
       }
     } catch (error) {
-      console.log("ERROR DELETING BOOKMARK", error)
+      console.log("ERROR DELETING WORK", error)
     } finally {
         setLoading(false)
     }
@@ -47,8 +49,8 @@ const DeleteBookmarkAlert = ({ bookmark }) => {
         <AlertDialogHeader>
           <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
           <AlertDialogDescription>
-            This action cannot be undone. This will permanently delete the bookmark
-            &quot;{bookmark.title}&quot; from your database.
+            This action cannot be undone. This will permanently delete the work
+            &quot;{work?.name}&quot; from your database.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
@@ -60,4 +62,4 @@ const DeleteBookmarkAlert = ({ bookmark }) => {
   )
 }
 
-export default DeleteBookmarkAlert
+export default DeleteWorkAlert

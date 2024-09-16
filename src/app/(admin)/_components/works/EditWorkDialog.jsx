@@ -9,15 +9,16 @@ import {
     DialogTrigger,
 } from '@/components/ui/dialog'
 import { useState } from 'react'
-import { updateBookmark } from '../dashboard/bookmarks/actions'
-import BookmarkForm from './BookmarkForm'
+import { updateBookmark } from '../../dashboard/bookmarks/actions'
+import WorkForm from './WorkForm'
 
-const EditBookmarkDialog = ({ bookmark }) => {
+const EditWorkDialog = ({ work }) => {
   const [open, setOpen] = useState(false)
 
   const handleSubmit = async (formData) => {
     try {
-      const { success, message, error } = await updateBookmark(bookmark.id, formData)
+        // CHANGE UPDATEBOOKMARK TO UPDATEWORK
+      const { success, message, error } = await updateBookmark(work.id, formData)
       if (success) {
         console.log(message)
         setOpen(false)
@@ -26,7 +27,7 @@ const EditBookmarkDialog = ({ bookmark }) => {
         console.error(error)
       }
     } catch (error) {
-      console.log("ERROR UPDATING BOOKMARK", error)
+      console.log("ERROR UPDATING PROJECT", error)
     }
   }
 
@@ -47,10 +48,10 @@ const EditBookmarkDialog = ({ bookmark }) => {
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px] md:max-w-3xl bg-white dark:bg-black rounded-xl" onClick={(e) => e.stopPropagation()}>
         <DialogHeader>
-          <DialogTitle>Edit Bookmark</DialogTitle>
+          <DialogTitle>Edit Work</DialogTitle>
         </DialogHeader>
         <form action={handleSubmit}>
-          <BookmarkForm initialData={bookmark} />
+          <WorkForm initialData={work} />
           <div className="flex justify-end mt-4">
             <Button type="submit">Save changes</Button>
           </div>
@@ -60,4 +61,4 @@ const EditBookmarkDialog = ({ bookmark }) => {
   )
 }
 
-export default EditBookmarkDialog
+export default EditWorkDialog

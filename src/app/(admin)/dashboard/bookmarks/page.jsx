@@ -26,7 +26,7 @@ const Page = async () => {
             <CustomDialog triggerName="Add bookmark" className="absolute top-6 right-5">
                 <AddBookmark />
             </CustomDialog>
-            <ResourceTable headers={bookmarksTableHeader} data={bookmarks} />
+            <ResourceTable headers={bookmarksTableHeader} data={bookmarks} rowType="bookmark"/>
         </ResourceCard>
     )
 }

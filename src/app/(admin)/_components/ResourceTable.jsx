@@ -8,8 +8,17 @@ import {
     TableRow
 } from '@/components/ui/table';
 import BookmarkTableRow from './BookmarkTableRow';
+import WorkTableRow from './works/WorkTableRow';
 
-const ResourceTable = ({ headers, data }) => {
+const rowComponents = {
+    'bookmark': BookmarkTableRow,
+    'work': WorkTableRow,
+    // Add more row components as needed
+  };
+
+const ResourceTable = ({ headers, data, rowType }) => {
+    const RowComponent = rowComponents[rowType] || BookmarkTableRow;
+
     console.log('Headers:', headers);
     console.log('Data:', data);
     return (
@@ -38,7 +47,7 @@ const ResourceTable = ({ headers, data }) => {
                 {data.map((item, index) => {
                     return (
                         <TableRow key={index}>
-                            <BookmarkTableRow item={item} />
+                            <RowComponent item={item} />
                         </TableRow>
                     )
                 })}

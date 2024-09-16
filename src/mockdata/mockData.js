@@ -202,34 +202,38 @@ export const techStack = `
 `
 
 export const projectsTableHeader = [
-    'image',
     'name',
     'description',
     'github url',
     'live url',
+    'case study',
+    'tech stack'
 ]
 
 export const projects = [
     {
-        image: '',
         name: 'iexplore',
         description: 'A club and drinks social app',
         github_url: 'https://github.com',
-        preview_url: 'https://nurenijamiu.codes',
+        live_url: 'https://nurenijamiu.codes',
+        case_study: 'A club and drinks social app',
+        tech_stack: 'Nextjs, TailwindCSS, Vercel, Firebase',
     },
     {
-        image: '',
         name: 'Adens law group',
         description: 'A club and drinks social app',
         github_url: 'https://github.com',
-        preview_url: 'https://nurenijamiu.codes',
+        live_url: 'https://nurenijamiu.codes',
+        case_study: 'A club and drinks social app',
+        tech_stack: 'Nextjs, TailwindCSS, Vercel, Firebase',
     },
     {
-        image: '',
         name: 'Providus Bank',
         description: 'A club and drinks social app',
         github_url: 'https://github.com',
-        preview_url: 'https://nurenijamiu.codes',
+        live_url: 'https://nurenijamiu.codes',
+        case_study: 'A club and drinks social app',
+        tech_stack: 'Nextjs, TailwindCSS, Vercel, Firebase',
     },
 ]
 
