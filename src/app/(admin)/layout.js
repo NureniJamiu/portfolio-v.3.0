@@ -2,25 +2,19 @@ import {
     BookCopy,
     Bookmark,
     Briefcase,
-    CircleUser,
     File,
     Home,
+    LogOut,
     Menu,
     Notebook,
     Package2,
     Search,
+    UserRoundPen
 } from 'lucide-react'
 import Link from 'next/link'
 
 import ThemeSwitcher from '@/components/custom/ThemeSwitcher'
 import { Button } from '@/components/ui/button'
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from '@/components/ui/card'
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -35,21 +29,9 @@ import { createClient } from '@/utils/supabase/server'
 
 const DashboardLayout = async ({ children }) => {
     const supabase = createClient()
-
     const {
         data: { user },
     } = await supabase.auth.getUser()
-
-    console.log('USER', user)
-    // const { logout } = useAuth()
-    // const { user } = useAuth({ middleware: 'auth' })
-
-    // const router = useRouter()
-
-    // if (!user) {
-    //     return router.push('/')
-    // }
-
     return (
         <div className="grid h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
             <div className="hidden border-r bg-muted/40 md:block">
@@ -60,7 +42,6 @@ const DashboardLayout = async ({ children }) => {
                             className="flex items-center gap-2 font-semibold">
                             <span className="">N.J.O</span>
                         </Link>
-
                         <ThemeSwitcher />
                     </div>
                     <div className="flex-1">
@@ -101,27 +82,15 @@ const DashboardLayout = async ({ children }) => {
                                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary">
                                 <Bookmark className="h-4 w-4" />
                                 Bookmarks
-                                {/* <Badge className="ml-auto flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
-                                    6
-                                </Badge> */}
                             </Link>
                         </nav>
                     </div>
-                    <div className="mt-auto p-4">
-                        <Card x-chunk="dashboard-02-chunk-0">
-                            <CardHeader className="p-2 pt-0 md:p-4">
-                                <CardTitle>Get started here</CardTitle>
-                                <CardDescription>
-                                    Begin by sharing your thoughts and ideas
-                                    with your audience.
-                                </CardDescription>
-                            </CardHeader>
-                            <CardContent className="p-2 pt-0 md:p-4 md:pt-0">
-                                <Button size="sm" className="w-full rounded-xl">
-                                    Add Note
-                                </Button>
-                            </CardContent>
-                        </Card>
+                    <div className="px-5 py-2">
+                        <form action="/auth/signout" method="post" className="">
+                            <Button size="sm" className="w-full rounded-xl">
+                                <LogOut className="mr-2 h-4 w-4" /> Logout
+                            </Button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -142,10 +111,10 @@ const DashboardLayout = async ({ children }) => {
                         <SheetContent side="left" className="flex flex-col">
                             <nav className="grid gap-2 text-lg font-medium">
                                 <Link
-                                    href="#"
+                                    href="/dashboard"
                                     className="flex items-center gap-2 text-lg font-semibold">
                                     <Package2 className="h-6 w-6" />
-                                    <span className="sr-only">Acme Inc</span>
+                                    <span className="sr-only">N.J.O</span>
                                 </Link>
                                 <Link
                                     href="/dashboard"
@@ -182,28 +151,8 @@ const DashboardLayout = async ({ children }) => {
                                     className="mx-[-0.65rem] flex items-center gap-4 rounded-xl bg-muted px-3 py-2 text-foreground hover:text-foreground">
                                     <Bookmark className="h-5 w-5" />
                                     Bookmarks
-                                    {/* <Badge className="ml-auto flex h-6 w-6 shrink-0 items-center justify-center rounded-full">
-                                        6
-                                    </Badge> */}
                                 </Link>
                             </nav>
-                            <div className="mt-auto">
-                                <Card>
-                                    <CardHeader>
-                                        <CardTitle>Upgrade to Pro</CardTitle>
-                                        <CardDescription>
-                                            Unlock all features and get
-                                            unlimited access to our support
-                                            team.
-                                        </CardDescription>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <Button size="sm" className="w-full">
-                                            Upgrade
-                                        </Button>
-                                    </CardContent>
-                                </Card>
-                            </div>
                         </SheetContent>
                     </Sheet>
                     <div className="w-full flex-1">
@@ -221,12 +170,14 @@ const DashboardLayout = async ({ children }) => {
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
                             <div className="flex items-center gap-1">
-                                <span>{user?.email}</span>
+                                <span className="text-sm">{user?.email}</span>
                                 <Button
                                     variant="secondary"
                                     size="icon"
                                     className="rounded-full">
-                                    <CircleUser className="h-5 w-5" />
+                                    <div className="flex items-center justify-center rounded-full p-1 border-2 border-slate-800">
+                                        <UserRoundPen className="h-5 w-5" />
+                                    </div>
                                     <span className="sr-only">
                                         Toggle user menu
                                     </span>
@@ -239,11 +190,11 @@ const DashboardLayout = async ({ children }) => {
                             <DropdownMenuItem>Settings</DropdownMenuItem>
                             <DropdownMenuItem>Support</DropdownMenuItem>
                             <DropdownMenuSeparator />
-                            {/* <DropdownMenuItem> */}
                             <form action="/auth/signout" method="post">
-                                <Button variant="link">Logout</Button>
+                                <Button variant="ghost">
+                                    <LogOut className="mr-1 size-4"/>  Logout
+                                </Button>
                             </form>
-                            {/* </DropdownMenuItem> */}
                         </DropdownMenuContent>
                     </DropdownMenu>
                 </header>
