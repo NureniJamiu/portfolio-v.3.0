@@ -8,19 +8,18 @@ import {
     TableRow
 } from '@/components/ui/table';
 import BookmarkTableRow from './BookmarkTableRow';
+import ResumeTableRow from './resume/ResumeTableRow';
 import WorkTableRow from './works/WorkTableRow';
 
 const rowComponents = {
     'bookmark': BookmarkTableRow,
     'work': WorkTableRow,
+    'resume': ResumeTableRow,
     // Add more row components as needed
   };
 
 const ResourceTable = ({ headers, data, rowType }) => {
     const RowComponent = rowComponents[rowType] || BookmarkTableRow;
-
-    console.log('Headers:', headers);
-    console.log('Data:', data);
     return (
         <Table>
             <TableHeader>

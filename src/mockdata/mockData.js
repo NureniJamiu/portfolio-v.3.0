@@ -201,6 +201,38 @@ export const techStack = `
     - Firebase
 `
 
+export const resumeTableHeader = [
+    'company name',
+    'position',
+    'description',
+    'from',
+    'to',
+]
+
+export const resumes = [
+    {
+        company_name: 'Google',
+        position: 'Software Engineer',
+        description: 'Worked on the search team to improve search results.',
+        start_year: '2019',
+        end_year: 'present',
+    },
+    {
+        company_name: 'Facebook',
+        position: 'Product Manager',
+        description: 'Managed the development of new features for the platform.',
+        start_year: '2017',
+        end_year: '2019',
+    },
+    {
+        company_name: 'Amazon',
+        position: 'Data Analyst',
+        description: 'Analyzed customer data to improve the shopping experience.',
+        start_year: '2015',
+        end_year: '2017',
+    },
+]
+
 export const projectsTableHeader = [
     'name',
     'description',
