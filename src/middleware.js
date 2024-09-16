@@ -1,8 +1,20 @@
-import { updateSession } from '@/utils/supabase/middleware'
+import { createMiddlewareClient } from '@supabase/auth-helpers-nextjs'
+import { NextResponse } from 'next/server'
 
 export async function middleware(request) {
-    // update user's auth session
-    return await updateSession(request)
+    try {
+        // Create a Supabase client configured to use cookies
+        const supabase = createMiddlewareClient({ req: request, res: NextResponse.next() })
+
+        // Refresh session if expired - required for Server Components
+        await supabase.auth.getSession()
+
+        return NextResponse.next()
+    } catch (e) {
+        console.error('Middleware error:', e)
+        // You might want to return a custom error response here
+        return NextResponse.next()
+    }
 }
 
 export const config = {
