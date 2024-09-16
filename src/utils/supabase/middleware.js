@@ -1,40 +1,36 @@
-import { createClient } from '@supabase/supabase-js'
+import { createServerClient } from '@supabase/ssr'
 import { NextResponse } from 'next/server'
 
-export async function middleware(request) {
-    try {
-        // Create a Supabase client directly
-        const supabase = createClient(
-            process.env.NEXT_PUBLIC_SUPABASE_URL,
-            process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
-        )
+export async function updateSession(request) {
+    let supabaseResponse = NextResponse.next({
+        request,
+    })
 
-        // Refresh session if expired
-        const { data: { session }, error } = await supabase.auth.getSession()
+    const supabase = createServerClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL,
+        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+        {
+            cookies: {
+                getAll() {
+                    return request.cookies.getAll()
+                },
+                setAll(cookiesToSet) {
+                    cookiesToSet.forEach(({ name, value, options }) =>
+                        request.cookies.set(name, value),
+                    )
+                    supabaseResponse = NextResponse.next({
+                        request,
+                    })
+                    cookiesToSet.forEach(({ name, value, options }) =>
+                        supabaseResponse.cookies.set(name, value, options),
+                    )
+                },
+            },
+        },
+    )
 
-        if (error) {
-            console.error('Error refreshing session:', error)
-        }
+    // refreshing the auth token
+    await supabase.auth.getUser()
 
-        // You can add additional logic here based on the session if needed
-
-        return NextResponse.next()
-    } catch (e) {
-        console.error('Middleware error:', e)
-        // You might want to return a custom error response here
-        return NextResponse.next()
-    }
-}
-
-export const config = {
-    matcher: [
-        /*
-         * Match all request paths except for the ones starting with:
-         * - _next/static (static files)
-         * - _next/image (image optimization files)
-         * - favicon.ico (favicon file)
-         * Feel free to modify this pattern to include more paths.
-         */
-        '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
-    ],
+    return supabaseResponse
 }
