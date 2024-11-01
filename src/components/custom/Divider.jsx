@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Divider = ({
     type = 'border-solid',
     border = 'border-b-[#393939]',
@@ -7,7 +5,8 @@ const Divider = ({
 }) => {
     return (
         <div
-            className={`${type} ${border} ${className} w-full border-b-[.5px]  mt-1`}></div>
+            className={`${type} ${border} ${className} w-full border-b-[.5px] mt-1`}>
+        </div>
     )
 }
 

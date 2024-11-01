@@ -1,7 +1,6 @@
-import React from 'react'
-import Pallete from './Pallete'
-import Divider from './Divider'
 import Link from 'next/link'
+import Divider from './Divider'
+import Pallete from './Pallete'
 import ThemeSwitcher from './ThemeSwitcher'
 
 const Header = () => {
