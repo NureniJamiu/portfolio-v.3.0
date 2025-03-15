@@ -60,7 +60,7 @@ const Header = () => {
           <div className="flex items-center justify-between relative overflow-hidden">
             {/* Job title with animation */}
             <div
-              className={`text-[14px] text-[#727272] transition-transform duration-300 ${
+              className={`text-[14px] text-[#727272] transition-transform duration-300 md:hidden ${
                 isMenuOpen
                   ? "-translate-x-full opacity-0"
                   : "translate-x-0 opacity-100"
@@ -71,7 +71,7 @@ const Header = () => {
 
             {/* Mobile navigation links that slide in */}
             <div
-              className={`absolute left-0 flex items-center gap-2 text-[14px] text-[#2b2b2b] dark:text-neutral-500 transition-transform duration-300 ${
+              className={`absolute md:static md:translate-x-0 md:opacity-100 left-0 flex items-center gap-2 text-[14px] text-[#2b2b2b] dark:text-neutral-500 transition-transform duration-300 ${
                 isMenuOpen
                   ? "translate-x-0 opacity-100"
                   : "translate-x-full opacity-0"
