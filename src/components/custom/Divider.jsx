@@ -5,7 +5,7 @@ const Divider = ({
 }) => {
   return (
     <div
-      className={`${type} ${border} ${className} w-full border-b-[.5px] mt-1`}
+      className={`${type} ${border} ${className} w-full border-b-[1px] mt-1`}
     ></div>
   );
 };
