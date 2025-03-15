@@ -1,10 +1,11 @@
-import { createServerClient } from '@supabase/ssr'
-import { NextResponse } from 'next/server'
+// utils/supabase/middleware.js
+import { createServerClient } from "@supabase/ssr";
+import { NextResponse } from "next/server";
 
 export async function updateSession(request) {
   let supabaseResponse = NextResponse.next({
     request,
-  })
+  });
 
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL,
@@ -12,20 +13,22 @@ export async function updateSession(request) {
     {
       cookies: {
         getAll() {
-          return request.cookies.getAll()
+          return request.cookies.getAll();
         },
         setAll(cookiesToSet) {
-          cookiesToSet.forEach(({ name, value, options }) => request.cookies.set(name, value))
+          cookiesToSet.forEach(({ name, value, options }) =>
+            request.cookies.set(name, value)
+          );
           supabaseResponse = NextResponse.next({
             request,
-          })
+          });
           cookiesToSet.forEach(({ name, value, options }) =>
             supabaseResponse.cookies.set(name, value, options)
-          )
+          );
         },
       },
     }
-  )
+  );
 
   // IMPORTANT: Avoid writing any logic between createServerClient and
   // supabase.auth.getUser(). A simple mistake could make it very hard to debug
@@ -33,39 +36,46 @@ export async function updateSession(request) {
 
   const {
     data: { user },
-  } = await supabase.auth.getUser()
+  } = await supabase.auth.getUser();
 
-   // If user is not authenticated and trying to visit /dashboard or /dashboard/*, redirect to /login
-   if (
-    !user &&
-    (request.nextUrl.pathname === '/dashboard' ||
-     request.nextUrl.pathname.startsWith('/dashboard/'))
-  ) {
-    const url = request.nextUrl.clone()
-    url.pathname = '/login'
-    return NextResponse.redirect(url)
-  }
+  // Define your public routes
+  const publicRoutes = [
+    "/",
+    "/login",
+    "/auth",
+    "/blogroll",
+    "/bookmarks",
+    "/notes",
+    "/posts",
+    "/resume",
+    "/works",
+    "/timeline",
+    "/now",
+  ];
 
-  // If user is authenticated and trying to visit the /login page, redirect to home (/dashboard)
-  if (user && request.nextUrl.pathname.startsWith('/login')) {
-    const url = request.nextUrl.clone()
-    url.pathname = '/dashboard'
-    return NextResponse.redirect(url)
-  }
+  // Define your protected routes that require authentication
+  const protectedRoutes = ["/dashboard/"];
 
-  // If user is not authenticated and not trying to visit /login or /auth, redirect to /login
+  // If user is not authenticated and trying to access a protected route, redirect to login
   if (
     !user &&
-    !request.nextUrl.pathname.startsWith('/login') &&
-    !request.nextUrl.pathname.startsWith('/auth') &&
-    request.nextUrl.pathname !== '/'
+    protectedRoutes.some(
+      (route) =>
+        request.nextUrl.pathname === route ||
+        request.nextUrl.pathname.startsWith(route + "/")
+    )
   ) {
-    const url = request.nextUrl.clone()
-    url.pathname = '/'
-    return NextResponse.redirect(url)
+    const url = request.nextUrl.clone();
+    url.pathname = "/login";
+    return NextResponse.redirect(url);
   }
 
-
+  // If user is authenticated and trying to visit the login page, redirect to dashboard
+  if (user && request.nextUrl.pathname === "/login") {
+    const url = request.nextUrl.clone();
+    url.pathname = "/dashboard";
+    return NextResponse.redirect(url);
+  }
 
   // IMPORTANT: You *must* return the supabaseResponse object as it is. If you're
   // creating a new response object with NextResponse.next() make sure to:
@@ -80,5 +90,5 @@ export async function updateSession(request) {
   // If this is not done, you may be causing the browser and server to go out
   // of sync and terminate the user's session prematurely!
 
-  return supabaseResponse
+  return supabaseResponse;
 }
