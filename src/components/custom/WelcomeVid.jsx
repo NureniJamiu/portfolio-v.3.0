@@ -1,14 +1,26 @@
-import ShineBorder from '@/components/magicui/shine-border'
-import { Video } from 'lucide-react'
+import HeroVideoDialog from "../magicui/hero-video-dialog";
 
 const WelcomeVid = () => {
-    return (
-        <ShineBorder className="aspect-video w-full bg-[#B8B8B8] text-center text-2xl font-bold capitalize border-red-900 dark:border-white">
-            <div className="flex items-center justify-center ">
-                <Video size={85} className="text-[#727272]" />
-            </div>
-        </ShineBorder>
-    )
-}
+  return (
+    <div className="relative">
+      <HeroVideoDialog
+        className="block dark:hidden"
+        animationStyle="top-in-bottom-out"
+        videoSrc="https://www.youtube.com/embed/XAOuIy2YBZk?si=UL2iAfo7Y_HYOOkW"
+        thumbnailSrc="https://res.cloudinary.com/dasjswerc/image/upload/v1742049480/uploads/t59udbtesma25dlbhfc9.jpg"
+        thumbnailAlt="Hero Video"
+      />
+      <HeroVideoDialog
+        className="hidden dark:block"
+        animationStyle="top-in-bottom-out"
+        videoSrc="https://www.youtube.com/embed/XAOuIy2YBZk?si=UL2iAfo7Y_HYOOkW"
+        thumbnailSrc="https://res.cloudinary.com/dasjswerc/image/upload/v1742049480/uploads/t59udbtesma25dlbhfc9.jpg"
+        thumbnailAlt="Hero Video"
+      />
+    </div>
+  );
+};
 
-export default WelcomeVid
+export default WelcomeVid;
+
+// "https://res.cloudinary.com/dasjswerc/image/upload/v1742049480/uploads/t59udbtesma25dlbhfc9.jpg"
