@@ -7,8 +7,9 @@ export default function Home() {
     <>
       <main className="pb-24">
         <PageTitle
-          title="About"
-          description="Frontend engineer building the web one div at a time."
+          title="Hello👋"
+          description="Welcome to my corner of the Internet."
+          titleClassName="text-4xl"
         />
         <div className="my-5 px-4 text-[15px] dark:text-neutral-300">
           {/* <WelcomeVid /> */}
