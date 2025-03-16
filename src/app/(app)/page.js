@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <main className="pb-24">
+      <main className="md:pb-20">
         <PageTitle
           title="Hello👋"
           description="Welcome to my corner of the Internet."
@@ -118,6 +118,40 @@ export default function Home() {
             </span>
           </div>
           <Divider type="border-dashed" />
+        </div>
+
+        <div className="md:hidden mt-10 mb-5 grid space-y-4 p-4">
+          <Link
+            href="https://www.linkedin.com/in/nurenijamiu/"
+            className="text-[14px] text-[#2b2b2b] dark:text-[#B8B8B8] hover:text-black hover:dark:text-white group"
+            target="_blank"
+          >
+            <span className="group-hover:no-underline mr-2"> 🔘</span>
+            <span className="underline">Linkedin</span>{" "}
+          </Link>
+          <Link
+            href="https://www.github.com/NureniJamiu"
+            className="text-[14px] text-[#2b2b2b] dark:text-[#B8B8B8] hover:text-black hover:dark:text-white group"
+            target="_blank"
+          >
+            <span className="group-hover:no-underline mr-2"> 🔘</span>
+            <span className="underline">Github</span>{" "}
+          </Link>
+          <Link
+            href="https://mastodon.social/@penocrat"
+            className="text-[14px] text-[#2b2b2b] dark:text-[#B8B8B8] hover:text-black hover:dark:text-white group"
+            target="_blank"
+          >
+            <span className="group-hover:no-underline mr-2"> 🔘</span>
+            <span className="underline">Mastodon</span>{" "}
+          </Link>
+        </div>
+        <div className="md:hidden">
+          <Divider />
+        </div>
+
+        <div className="md:hidden text-center text-[14px] text-[#2b2b2b] dark:text-neutral-300 py-5 md:py-0 md:pt-10">
+          Made with ❤️ by <b>Nureni Jamiu Olawale</b>
         </div>
       </main>
     </>
