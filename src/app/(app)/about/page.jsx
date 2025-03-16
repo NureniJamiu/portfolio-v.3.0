@@ -63,21 +63,22 @@ const Page = () => {
             <p>
               An odd mix work ethic and ego led me to define myself through the
               stuff I make. I like to make stuff (almost always too fast). That
-              qualifies for the tech bro archetype, who needs to "make" things
-              (often obvious mistakes) to learn. Unfortunately I am one of those
-              monkeys for whom most learning comes from experience. As I age, I
-              get reminded that the stuff that viscerally gets acknowledged
-              rarely comes from passive consumption but rather from deeply
-              engaged acts. Being a designer has been technical enough to make
-              me believe I understand things better over time. But also abstract
-              to keep me humble and hungry. Images and words are imperfect. It
-              looks like we are just realizing the problem with words while
-              we&apos;ve been aware of how images can distort our perception for
-              a long time. I&apos;ll keep making images and code stuff,
-              that&apos;s my way to chip away at life&apos;s monolith, or to
-              push my rock up the mountain like Sisyphus. I spend most of my
-              time torn between ascetic ideals and pragmatic coping strategies,
-              that&apos;s my version of the examined life.
+              qualifies for the tech bro archetype, who needs to
+              &quot;make&quot; things (often obvious mistakes) to learn.
+              Unfortunately I am one of those monkeys for whom most learning
+              comes from experience. As I age, I get reminded that the stuff
+              that viscerally gets acknowledged rarely comes from passive
+              consumption but rather from deeply engaged acts. Being a designer
+              has been technical enough to make me believe I understand things
+              better over time. But also abstract to keep me humble and hungry.
+              Images and words are imperfect. It looks like we are just
+              realizing the problem with words while we&apos;ve been aware of
+              how images can distort our perception for a long time. I&apos;ll
+              keep making images and code stuff, that&apos;s my way to chip away
+              at life&apos;s monolith, or to push my rock up the mountain like
+              Sisyphus. I spend most of my time torn between ascetic ideals and
+              pragmatic coping strategies, that&apos;s my version of the
+              examined life.
             </p>
             <p>
               After quitting social media I decided to put more intention in the
