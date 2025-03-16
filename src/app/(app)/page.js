@@ -20,14 +20,22 @@ export default function Home() {
               loves building things and helping people. I am currently pursuing
               a <b>double degree</b> in{" "}
               <span className="font-bold underline">Computer Science</span> at{" "}
-              <span className="font-bold underline">
+              <Link
+                href="https://www.iu.org"
+                target="_blank"
+                className="font-bold underline"
+              >
                 International University of Applied Sciences
-              </span>
+              </Link>
               , Germany , and in{" "}
               <span className="font-bold underline">Project Management</span> at{" "}
-              <span className="font-bold underline">
+              <Link
+                href="https://www.lasu.edu.ng"
+                target="_blank"
+                className="font-bold underline"
+              >
                 Lagos State University
-              </span>
+              </Link>
               , Nigeria.
             </p>
 

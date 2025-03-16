@@ -25,8 +25,8 @@ const Page = () => {
           <Divider />
           <div className="mt-6 space-y-4 p-4">
             <p>
-              You already know my name by now, if you don't just look above at
-              the video thumbnail. <br /> <br /> I believe in learning things
+              You already know my name by now, if you don&apos;t just look above
+              at the video thumbnail. <br /> <br /> I believe in learning things
               the long (often harder) way. Like finding the energy to have a
               website (or whatever this is). I&apos;m not 100% sure it is a wise
               use of my time but it feels right to speak my truth. I design
