@@ -64,13 +64,6 @@ export default function Home() {
           </div>
           <Divider type="border-dashed" />
           <div className="flex items-center px-4 mt-3">
-            <span className="w-36 text-[#727272]">Work</span>
-            <span className="flex-1 font-[300]">
-              Web Developer at Boughview Innovations
-            </span>
-          </div>
-          <Divider type="border-dashed" />
-          <div className="flex items-center px-4 mt-3">
             <span className="w-36 text-[#727272]">Colophon</span>
             <span className="flex-1 font-[300]">
               Nextjs, TailwindCSS, Inter
@@ -95,6 +88,11 @@ export default function Home() {
                 <span className="">3.0.0-alpha</span>
               </code>
             </span>
+          </div>
+          <Divider type="border-dashed" />
+          <div className="flex items-center px-4 mt-3">
+            <span className="w-36 text-[#727272]">Gmail</span>
+            <span className="flex-1 font-[300]">nurenijamiu951@gmail.com</span>
           </div>
           <Divider type="border-dashed" />
           <div className="flex items-center px-4 mt-3">
