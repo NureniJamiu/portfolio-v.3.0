@@ -11,6 +11,7 @@ export default function Home() {
           description="Welcome to my corner of the Internet."
           titleClassName="text-4xl"
         />
+
         <div className="my-5 px-4 text-[15px] dark:text-neutral-300">
           {/* <WelcomeVid /> */}
           <div className="mt-2 space-y-4">
@@ -34,17 +35,17 @@ export default function Home() {
               That&apos;s me in 10 seconds. If that peaked your interest and
               would like to know more, then{" "}
               <span className="bg-[#B8B8B8] dark:bg-[#2B2B2B] underline">
-                <a href="/about">click here</a>
+                <Link href="/about">click here</Link>
               </span>
               {" or "}
               <span className="bg-[#B8B8B8] dark:bg-[#2B2B2B] underline">
-                <a
+                <Link
                   href="https://youtu.be/XAOuIy2YBZk?si=ZY9_z3pVw9mJnA1Z"
                   className="underline"
                   target="_blank"
                 >
                   watch a short video
-                </a>
+                </Link>
               </span>{" "}
               about me instead.
             </p>
