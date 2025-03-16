@@ -30,8 +30,8 @@ const Page = () => {
             </p>
 
             <p>
-              That's me in 10 seconds. If that peaked your interest and would
-              like to know more, then keep scrolling
+              That&apos;s me in 10 seconds. If that peaked your interest and
+              would like to know more, then keep scrolling
             </p>
           </div>
         </div>

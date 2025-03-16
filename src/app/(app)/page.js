@@ -14,7 +14,7 @@ export default function Home() {
           {/* <WelcomeVid /> */}
           <div className="mt-2 space-y-4">
             <p>
-              My name is Nureni Jamiu Olawale. I am a Frontend developer who
+              My name is Nureni Jamiu Olawale. I am a Frontend Developer who
               loves building things and helping people. I am currently pursuing
               a <b>double degree</b> in{" "}
               <span className="font-bold underline">Computer Science</span> at{" "}
@@ -24,14 +24,14 @@ export default function Home() {
               , Germany , and in{" "}
               <span className="font-bold underline">Project Management</span> at{" "}
               <span className="font-bold underline">
-                Lagos State university
+                Lagos State University
               </span>
               , Nigeria.
             </p>
 
             <p>
-              That's me in 10 seconds. If that peaked your interest and would
-              like to know more, then{" "}
+              That&apos;s me in 10 seconds. If that peaked your interest and
+              would like to know more, then{" "}
               <span className="bg-[#B8B8B8] dark:bg-[#2B2B2B] underline">
                 <a href="/about">click here</a>
               </span>
