@@ -11,12 +11,10 @@ const Page = () => {
       <Divider />
 
       <div>
-        <div className="text-[15px] text-[#2b2b2b] dark:text-neutral-400">
+        <div className="text-[15px] text-[#2b2b2b] dark:text-neutral-300">
           <div className="p-4">
             <div className="flex items-end gap-1">
-              <h4 className="text-2xl font-semibold">
-                Hello again, stranger👋
-              </h4>
+              <h4 className="text-lg font-semibold">Hello again, stranger👋</h4>
             </div>
             <p className="text-[14px] text-[#727272]">
               I promise you, this is gonna be a long read.
