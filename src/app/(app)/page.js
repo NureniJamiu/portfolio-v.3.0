@@ -1,13 +1,53 @@
 import Divider from "@/components/custom/Divider";
-import WelcomeVid from "@/components/custom/WelcomeVid";
+import PageTitle from "@/components/custom/PageTitle";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <main className="pb-24">
-        <div className="my-5 px-4">
-          <WelcomeVid />
+        <PageTitle
+          title="About"
+          description="Frontend engineer building the web one div at a time."
+        />
+        <div className="my-5 px-4 text-[15px] dark:text-neutral-300">
+          {/* <WelcomeVid /> */}
+          <div className="mt-2 space-y-4">
+            <p>
+              My name is Nureni Jamiu Olawale. I am a Frontend developer who
+              loves building things and helping people. I am currently pursuing
+              a <b>double degree</b> in{" "}
+              <span className="font-bold underline">Computer Science</span> at{" "}
+              <span className="font-bold underline">
+                International University of Applied Sciences
+              </span>
+              , Germany , and in{" "}
+              <span className="font-bold underline">Project Management</span> at{" "}
+              <span className="font-bold underline">
+                Lagos State university
+              </span>
+              , Nigeria.
+            </p>
+
+            <p>
+              That's me in 10 seconds. If that peaked your interest and would
+              like to know more, then{" "}
+              <span className="bg-[#B8B8B8] dark:bg-[#2B2B2B] underline">
+                <a href="/about">click here</a>
+              </span>
+              {" or "}
+              <span className="bg-[#B8B8B8] dark:bg-[#2B2B2B] underline">
+                <a
+                  href="https://youtu.be/XAOuIy2YBZk?si=ZY9_z3pVw9mJnA1Z"
+                  className="underline"
+                  target="_blank"
+                >
+                  watch a short video
+                </a>
+              </span>{" "}
+              about me instead.
+            </p>
+          </div>
         </div>
         <Divider />
 

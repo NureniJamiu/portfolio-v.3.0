@@ -77,11 +77,26 @@ const Header = () => {
                   : "translate-x-full opacity-0"
               }`}
             >
+              <span>~</span>
+              <Link
+                href="/about"
+                className="hover:text-black hover:dark:text-white hover:underline"
+              >
+                about
+              </Link>
+              <span>/</span>
               <Link
                 href="/works"
                 className="hover:text-black hover:dark:text-white hover:underline"
               >
                 works
+              </Link>
+              <span>/</span>
+              <Link
+                href="/resume"
+                className="hover:text-black hover:dark:text-white hover:underline"
+              >
+                resume
               </Link>
               <span>/</span>
               <Link
@@ -91,13 +106,7 @@ const Header = () => {
                 notes
               </Link>
               <span>/</span>
-              <Link
-                href="/about"
-                className="hover:text-black hover:dark:text-white hover:underline"
-              >
-                about
-              </Link>
-              <span>/</span>
+
               <Link
                 href="/now"
                 className="hover:text-black hover:dark:text-white hover:underline"
