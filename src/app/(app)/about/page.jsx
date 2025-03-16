@@ -1,6 +1,6 @@
+import React from "react";
 import Divider from "@/components/custom/Divider";
 import WelcomeVid from "@/components/custom/WelcomeVid";
-import React from "react";
 
 const Page = () => {
   return (
