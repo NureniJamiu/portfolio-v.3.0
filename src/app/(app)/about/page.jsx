@@ -11,39 +11,35 @@ const Page = () => {
       <Divider />
 
       <div>
-        <div className="flex gap-5 text-[15px] p-4 text-[#2b2b2b] dark:text-neutral-400">
-          <div className="mt-2 space-y-4">
-            {/* <p>
-              Hello - again. I am a Frontend developer who loves building things
-              and helping people. I am currently pursuing a <b>double degree</b>{" "}
-              in <span className="font-bold underline">Computer Science</span>{" "}
-              at{" "}
-              <span className="font-bold underline">
-                International University of Applied Sciences
-              </span>
-              , Germany , and in{" "}
-              <span className="font-bold underline">Project Management</span> at{" "}
-              <span className="font-bold underline">
-                Lagos State university
-              </span>
-              , Nigeria.
-            </p> */}
-            <p>Hello – again. I promise you, this is gonna be a long read. </p>
-
+        <div className="text-[15px] text-[#2b2b2b] dark:text-neutral-400">
+          <div className="p-4">
+            <div className="flex items-end gap-1">
+              <h4 className="text-2xl font-semibold">
+                Hello again, stranger👋
+              </h4>
+            </div>
+            <p className="text-[14px] text-[#727272]">
+              I promise you, this is gonna be a long read.
+            </p>
+          </div>
+          <Divider />
+          <div className="mt-6 space-y-4 p-4">
             <p>
-              I believe in learning things the long (often harder) way. Like
-              finding the energy to have a website (or whatever this is).
-              I&apos;m not 100% sure it is a wise use of my time but it feels
-              right to speak my truth. I design websites because I got good
-              enough to get paid for it (crazy that I get to feed my family
-              doing this). I probably sound like a basic techie. Perhaps. These
-              few words, and what I do everyday are the only trace of my
-              existence. There is so much stuff out there. It&apos;s at best
-              distracting but realistically destructive (by fragmenting our
-              attention, then intellect and ultimately our society). I
-              don&apos;t want this for myself, my people, and honestly, the
-              world. I crave contemplation but rarely get to it. Discipline and
-              self examination keep me sane (and lots of walks and bike rides).
+              You already know my name by now, if you don't just look above at
+              the video thumbnail. <br /> <br /> I believe in learning things
+              the long (often harder) way. Like finding the energy to have a
+              website (or whatever this is). I&apos;m not 100% sure it is a wise
+              use of my time but it feels right to speak my truth. I design
+              websites because I got good enough to get paid for it (crazy that
+              I get to feed my family doing this). I probably sound like a basic
+              techie. Perhaps. These few words, and what I do everyday are the
+              only trace of my existence. There is so much stuff out there.
+              It&apos;s at best distracting but realistically destructive (by
+              fragmenting our attention, then intellect and ultimately our
+              society). I don&apos;t want this for myself, my people, and
+              honestly, the world. I crave contemplation but rarely get to it.
+              Discipline and self examination keep me sane (and lots of walks
+              and bike rides).
             </p>
             <p>
               I was born and raised in Nigeria, then in late 2016, Jessica Ko
