@@ -36,24 +36,27 @@ const Header = () => {
 
             <div className="hidden md:flex items-center gap-2">
               <Link
-                href="#"
+                href="https://www.linkedin.com/in/nurenijamiu/"
                 className="text-[14px] text-[#2b2b2b] dark:text-[#B8B8B8] hover:text-black hover:dark:text-white group"
+                target="_blank"
               >
                 <span className="group-hover:underline">Linkedin</span>{" "}
                 <span className="group-hover:no-underline"> /</span>
               </Link>
               <Link
-                href="#"
-                className="text-[14px] text-[#2b2b2b] dark:text-[#B8B8B8] hover:text-black hover:dark:text-white   group"
+                href="https://www.github.com/NureniJamiu"
+                className="text-[14px] text-[#2b2b2b] dark:text-[#B8B8B8] hover:text-black hover:dark:text-white group"
+                target="_blank"
               >
-                <span className="group-hover:underline">Twitter</span>{" "}
+                <span className="group-hover:underline">Github</span>{" "}
                 <span className="group-hover:no-underline"> /</span>
               </Link>
               <Link
-                href="#"
-                className="text-[14px] text-[#2b2b2b] dark:text-[#B8B8B8] hover:text-black hover:dark:text-white  hover:underline"
+                href="https://mastodon.social/@penocrat"
+                className="text-[14px] text-[#2b2b2b] dark:text-[#B8B8B8] hover:text-black hover:dark:text-white hover:underline"
+                target="_blank"
               >
-                Gmail
+                Mastodon
               </Link>
             </div>
           </div>
