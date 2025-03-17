@@ -157,10 +157,6 @@ export default function Home() {
         <div className="md:hidden">
           <Divider />
         </div>
-
-        <div className="md:hidden text-center text-[14px] text-[#2b2b2b] dark:text-neutral-300 py-5 md:py-0 md:pt-10">
-          Made with ❤️ by <b>Nureni Jamiu Olawale</b>
-        </div>
       </main>
     </>
   );
