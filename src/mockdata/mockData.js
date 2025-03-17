@@ -242,6 +242,14 @@ export const techStack = [
     - Tailwind
     - Vercel
 `,
+  `
+    - React
+    - Vite
+    - TypeScript
+    - Sass
+    - Tailwind
+    - Vercel
+`,
 ];
 
 export const resumeTableHeader = [
@@ -345,5 +353,64 @@ export const bookmarks = [
     description: "Online courses from top universities and companies.",
     url: "coursera.org",
     created_at: "2024-07-05T17:00:00Z",
+  },
+];
+
+export const certificates = [
+  {
+    title: "Introduction to Modern Database Systems",
+    issuer: "Saylor Academy",
+  },
+  {
+    title: "Responsive Web Design",
+    issuer: "FreeCodeCamp",
+  },
+  {
+    title: "Frontend Development Libraries",
+    issuer: "FreeCodeCamp",
+  },
+  {
+    title: "React Basics",
+    issuer: "HackerRank",
+  },
+  {
+    title: "Introduction to Cybersecurity",
+    issuer: "Cisco Networking Academy",
+  },
+  {
+    title: "Network Security Associate 1 & 2",
+    issuer: "Fortinet",
+  },
+  {
+    title: "Certified Appsec Practitioner (CAP)",
+    issuer: "The Secops Group",
+  },
+  {
+    title: "CSI Linux Operator",
+    issuer: "CSI Linux",
+  },
+  {
+    title: "Industrial Control System (ICS) basics",
+    issuer: "Cybersecurity and Infrastructure Security Agency",
+  },
+  {
+    title: "Cybersecurity Practices for ICS",
+    issuer: "Cybersecurity and Infrastructure Security Agency",
+  },
+  {
+    title: "Introduction to Critical Infrastructure",
+    issuer: "OPSWAT Academy",
+  },
+  {
+    title: "Opswat File Security Associate",
+    issuer: "OPSWAT Academy",
+  },
+  {
+    title: "Project Management Essentials Certified",
+    issuer: "Management and Strategy Institution",
+  },
+  {
+    title: "Lean Six Sigma White Belt Certified",
+    issuer: "Management and Strategy Institution",
   },
 ];
