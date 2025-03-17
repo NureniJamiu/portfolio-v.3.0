@@ -73,18 +73,18 @@ const Page = () => {
         <h4 className="text-lg font-bold pt-4 px-4">Certificates</h4>
         <div className="grid md:grid-cols-2 gap-2">
           {certificates.map((certificate, index) => (
-            <div
-              key={index}
-              className="p-4 space-y-1  text-[#2b2b2b] dark:text-[#dbdbdb]"
-            >
-              <div className="flex items-baseline md:justify-between font-semibold gap-2">
-                <span className="dark:text-neutral-300">
-                  {certificate.title}
-                </span>
+            <div key={index}>
+              <div className="p-4 space-y-1  text-[#2b2b2b] dark:text-[#dbdbdb]">
+                <div className="flex items-baseline md:justify-between font-semibold gap-2">
+                  <span className="dark:text-neutral-300">
+                    {certificate.title}
+                  </span>
+                </div>
+                <div className="text-[#727272] text-[13px]">
+                  <p>{certificate.issuer}</p>
+                </div>
               </div>
-              <div className="text-[#727272] text-[13px]">
-                <p>{certificate.issuer}</p>
-              </div>
+              <Divider type="border-dashed" />
             </div>
           ))}
         </div>
