@@ -414,3 +414,12 @@ export const certificates = [
     issuer: "Management and Strategy Institution",
   },
 ];
+
+export const workExperience = [
+  `
+  I developed responsive React applications with UI/UX teams following **Agile methodology**; I implemented **pixel-perfect designs** and front-end best practices; I collaborated across teams using **Git** and **REST APIs** for seamless integration with backend systems.
+`,
+  `
+I developed standardized React components for Chingu's educational platform serving **800+ students**; I collaborated with pair programmers to build interactive web applications using **Next.js, React, and TailwindCSS**; I followed Agile methodology with weekly retrospectives to improve frontend development skills.
+`,
+];
