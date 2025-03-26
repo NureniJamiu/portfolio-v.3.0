@@ -107,7 +107,7 @@ const ResumeCard = ({
     <>
       <div className="md:flex gap-4 text-[15px] py-5 text-[#2b2b2b] dark:text-[#dbdbdb] px-4">
         {image && (
-          <div>
+          <div className="hidden md:block">
             <div className="size-[40px] bg-neutral-400 rounded-full flex items-center justify-center overflow-hidden">
               <Image
                 src={image}
@@ -120,13 +120,30 @@ const ResumeCard = ({
           </div>
         )}
         <div className="flex-1 flex flex-col gap-1">
-          <div className="flex items-baseline md:justify-between font-semibold gap-2">
-            <Link href={companyUrl} target="_blank" className="hover:underline">
-              {name}
-            </Link>
-          </div>
-          <div className="text-[#727272] text-[13px]">
-            <p>{duration}</p>
+          <div className="flex gap-2">
+            <div className="flex md:hidden size-[40px] bg-neutral-400 rounded-full items-center justify-center overflow-hidden">
+              <Image
+                src={image}
+                alt="Boughview Logo"
+                width={70}
+                height={50}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <div className="flex items-baseline md:justify-between font-semibold gap-2">
+                <Link
+                  href={companyUrl}
+                  target="_blank"
+                  className="hover:underline"
+                >
+                  {name}
+                </Link>
+              </div>
+              <div className="text-[#727272] text-[13px]">
+                <p>{duration}</p>
+              </div>
+            </div>
           </div>
           {experience && (
             <div className="mt-3">
