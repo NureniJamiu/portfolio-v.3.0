@@ -48,6 +48,7 @@ const Page = () => {
             I&apos;ve been dropped into a futuristic city where everything works
             differently but somehow better.
           </p>
+          <Divider />
         </div>
         <div className="space-y-4">
           <h4 className="text-lg font-bold pt-2 px-4 ">
@@ -63,6 +64,7 @@ const Page = () => {
             prioritizing, and making peace with chaos. So, I guess it&apos;s not
             all bad.
           </p>
+          <Divider />
         </div>
         <div className="space-y-4">
           <h4 className="text-lg font-bold pt-2 px-4 ">Beyond all that</h4>
@@ -75,6 +77,7 @@ const Page = () => {
             Something about the quiet, the empty streets, and the occasional
             deep thought that may or may not be life-changing.
           </p>
+          <Divider />
         </div>
         <div className="space-y-4">
           <h4 className="text-lg font-bold pt-2 px-4 ">What&apos;s next?</h4>
@@ -84,6 +87,7 @@ const Page = () => {
             leadership roles, all of it. And if that&apos;s too much to ask,
             then at least let my Wi-Fi stay stable.
           </p>
+          <Divider />
         </div>
       </div>
     </div>
