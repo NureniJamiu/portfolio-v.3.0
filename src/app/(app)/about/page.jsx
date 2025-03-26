@@ -23,120 +23,111 @@ const Page = () => {
           <Divider />
           <div className="mt-6 space-y-4 p-4">
             <p>
-              You already know my name by now, if you don&apos;t just look above
-              at the video thumbnail. <br /> <br /> I believe in learning things
-              the long (often harder) way. Like finding the energy to have a
-              website (or whatever this is). I&apos;m not 100% sure it is a wise
-              use of my time but it feels right to speak my truth. I design
-              websites because I got good enough to get paid for it (crazy that
-              I get to feed my family doing this). I probably sound like a basic
-              techie. Perhaps. These few words, and what I do everyday are the
-              only trace of my existence. There is so much stuff out there.
-              It&apos;s at best distracting but realistically destructive (by
-              fragmenting our attention, then intellect and ultimately our
-              society). I don&apos;t want this for myself, my people, and
-              honestly, the world. I crave contemplation but rarely get to it.
-              Discipline and self examination keep me sane (and lots of walks
-              and bike rides).
+              You already know my name by now. If you don&apos;t just scroll up
+              – It&apos;s somewhere on this page. <br /> <br /> I believe in
+              learning things the long (often harder) way. Not because I
+              particularly enjoy struggle, but because struggle refines
+              understanding. This website- whatever it is-exists because I
+              believe in documenting my journey. Whether or not it&apos;s a wise
+              use of my time is debatable, but it feels right to carve out a
+              space to express my thoughts.
             </p>
             <p>
-              I was born and raised in Nigeria, then in late 2016, Jessica Ko
-              found me on dribbble and flew me to the Bay Area to join
-              Opendoor&apos;s design team where I spent 5 years. In less than 6
-              years I went from living out of a few bags to have a family.
-              It&apos;s been wild to say the least. I never planned any of that.
-              While I&apos;m filled with gratitude I want to put as much
-              intention as I can to figure out where I want to live and what
-              kind of life. That - takes most of my free time. I like to think
-              that I practice a sort of socratic examined life; a wholesome
-              summum bonum. It has been complicated for me to find much
-              satisfaction in my contribution as a web designer. A website is a
-              website. Yet almost ten years later I&apos;m still here, making
-              websites.
+              I write code for a living, but I don&apos;t just build software-I
+              build things that make sense to me. I started with web development
+              because I got good enough to get paid for it, which still feels
+              surreal sometimes. Over time, my curiosity led me deeper into{" "}
+              <b>cybersecurity</b>, <b>ethical hacking</b>, and{" "}
+              <b>project management.</b> Not because these fields are trending,
+              but because I enjoy understanding how things work, how they break,
+              and how they can be fixed. I thrive in that space between{" "}
+              <b>creativity and logic</b>, where things either work or they
+              dont&apos;t–no fluff, no pretenses, just raw problem-solving.
             </p>
             <p>
-              An odd mix work ethic and ego led me to define myself through the
-              stuff I make. I like to make stuff (almost always too fast). That
-              qualifies for the tech bro archetype, who needs to
-              &quot;make&quot; things (often obvious mistakes) to learn.
-              Unfortunately I am one of those monkeys for whom most learning
-              comes from experience. As I age, I get reminded that the stuff
-              that viscerally gets acknowledged rarely comes from passive
-              consumption but rather from deeply engaged acts. Being a designer
-              has been technical enough to make me believe I understand things
-              better over time. But also abstract to keep me humble and hungry.
-              Images and words are imperfect. It looks like we are just
-              realizing the problem with words while we&apos;ve been aware of
-              how images can distort our perception for a long time. I&apos;ll
-              keep making images and code stuff, that&apos;s my way to chip away
-              at life&apos;s monolith, or to push my rock up the mountain like
-              Sisyphus. I spend most of my time torn between ascetic ideals and
-              pragmatic coping strategies, that&apos;s my version of the
-              examined life.
+              These few words and the things I create are the only traces of my
+              existence online. The internet is a strange place- overwhelming,
+              distracting, and often destructive. It pulls people in, fragments
+              attention, and leaves them restless. I don&apos;t want that for
+              myself I don&apos;t want it for the people I care about. I crave
+              deep focus but the modern world rarely allows it. So, I build, I
+              write, and I think. Discipline and self-reflection keep me
+              grounded (along with the occassional walk).
             </p>
             <p>
-              After quitting social media I decided to put more intention in the
-              way I use the internet in general. I used to think about things in
-              terms of cost/benefit only and fell for the potential value
-              without indexing the attention cost. I&apos;m now reclaiming my
-              fragmented attention. The few connections, ideas, and laughs I got
-              from it are not worth the space it took in my head. Of course,
-              I&apos;m afraid of the social stigma and the potential effect it
-              could have on my career... after all, I didn&apos;t delete my
-              Linkedin account. It says something about me. Those who will
-              examine my online presence will perceive this differently – be it.
-              I know the design world is all up on twitter and instagram. Mostly
-              for reach and interaction according to my understanding. Vanity,
-              garbage, and burnout are too much for me to justify the effort of
-              coping. I&apos;ll be active where relevant: Dribbble and this
-              site.
+              I grew up in Nigeria, in a rural area where most people don&apos;t
+              know how to use smartphones, and even those who do often struggle
+              with reliable internet access. That shaped me. It made me think
+              about <b>accessibility</b>–not just in software but in knowledge.
+              There&apos;s an entire world of technology out there, but
+              it&apos;s mostly built for those who already have access. I want
+              to change that in whatever way I can.
             </p>
             <p>
-              I don&apos;t think or care much about tech stack, data,
-              accessibility or AI. A scary sentence to write but that is
-              partially what motivated me to leave social media that seems
-              obsessed with these matters. The web industry is increasingly
-              fragmented and driven by highly specialized tools. This promotes a
-              loss of autonomy by increasing dependencies and lack of (human)
-              specialists. Too many inputs and tools have distracted me from the
-              human reality of the creative process: consider context, take
-              decisions, do the work and iterate. Limiting inputs narrows the
-              context, it&apos;s crucial for me to stay functional. I often
-              choose to center around tangibility and what I judge is the wisest
-              feasible action. That may sound pretentious but it allows me to
-              find meaning in what I do. Data and AI are two polarizing topics.
-              I&apos;m conformably stating that: They both are tools, and they
-              will be leveraged to create the usual 80-20 ratio of trash to
-              goodness. Designers seem perpetually threatened by
-              democratization. Tool after tool, it&apos;s the same story.
-              It&apos;s absurd. My interest lies in creating stuff grounded in
-              good practices that reflect my team&apos;s opinion and best
-              execution while using the simplest tool to make the thing. So far
-              AI has been fun but not particularly insightful and Data has been
-              frustrating as its source and meaning often seem to be here to
-              justify a request more than a real need.
+              Somewhere along the way, I found myself leading projects. I study
+              Project Managament, and I&apos;ve had the chance to manage real
+              teams–seven different clusters in an NGO, to be precise. It
+              wasn&apos;t something I planned, but I enjoy it. Organizing ideas,
+              coordinating people, making sure things move forward–that&apos; a
+              kind of problem-solving too. it&apos;s messy, unpredictable, and
+              human. And for some reason, I like it.
             </p>
             <p>
-              While I&apos;m not a technologist, I&apos;m not a monk either.
-              I&apos;m way too fidgety and working on it. Modern tech devices
-              really rub my monkey mind the wrong way but I get that I need to
-              accept it as a part of life. So I&apos;ve been a fair-weather
-              meditator for a while now. Believing that discipline was the only
-              thing keeping me away from the peace and insights (silly, I know)
-              I&apos;ve been practicing on and off for years. Recent ventures
-              into Zen and Daoism thought have removed the goals from the
-              ritual, providing just enough guidance to allow a glance of the
-              feeling. A feeling, not words or any other symbols. Understanding
-              the importance of the non-verbal experience of life has been
-              eye-opening. So when time opens up, I sit, just to sit, relax what
-              is between my eyes, and watch my posture and breath.
+              I also spend a lot of time tinkering with cybersecurity tools. It
+              started with curiosity–why do things break? How do hackers think?
+              But then I realized that security is often treated as an
+              afterthought in development. So I started building my own tools: a
+              network scanner, a MAC address changer, an ARP spoofer. Simple
+              things but useful. I want to create security tools that
+              aren&apos;t just powerful but intuitive–things that make
+              cybersecurity more accessible to developers and everyday users.
             </p>
             <p>
-              They say feedback is a gift. While I don&apos;t track anything, I
-              like to know how you feel about being here on my website so feel
-              free to reach out. My gratitude for the opportunity to be here now
-              is larger than an html file can hold. You could be anywhere — and
-              yet, you are here now.
+              Most of what I know, I learned by doing. Reading helps, but
+              nothing sticks like experience. Unfortunately, that means
+              I&apos;ve made a lot of mistakes. I&apos;ve built things that
+              didn&apos;t work, led projects that could&apos;ve gone better, and
+              spent hours debugging problems that could&apos;ve been avoided.
+              But every mistake is a lesson. The internet is filled with passive
+              consumption–content that makes you feel like you&apos;re learning
+              without actually teaching you anything. I avoid that. I prefer
+              deep engagement, building things with my own hands, and pushing
+              through the confusion until something clicks.
+            </p>
+            <p>
+              I don&apos;t spend much time thinking about the hottest tech
+              stacks or the latest frameworks. They change too often to matter.
+              I focus on building things in the simplest way possible. AI? Data?
+              Cool tools, but they&apos;re just tools. People obsess over them
+              like they&apos;re the future, but the truth is, 80% of what gets
+              built is garbage. The same cycle repeats–every new tool brings
+              hype, fear, and then eventual indifference. I care about making
+              things that work, things that are useful. That&apos;s it.
+            </p>
+            <p>
+              I could talk about my work, my projects, and my technical
+              interests for hours, but at the end of the day, I&apos;m just
+              trying to figure things out. Where I want to go. What kind of life
+              I want to live. What really matters in the long run. That takes up
+              most of my free time.
+            </p>
+            <p>
+              I used to be caught up in the noise–social media, trends, endless
+              streams of information. Now, I&apos;m reclaiming my attention.
+              I&apos;m putting more intention into what I do, focusing on
+              what&apos;s worth my time. I don&apos;t track analytics or
+              optimize for engagement. If you found this website, you&apos;re
+              here because you were meant to be.
+            </p>
+            <p>
+              So, that&apos;s me. A developer, a security enthusiast, a project
+              manager, a thinker. Someone who builds because it makes sense to
+              build. Someone who questions things, learns by doing, and tries to
+              create something meaningful in a world full of distractions.
+            </p>
+            <p>
+              You could be anywhere right now, but you&apos;re here. And for
+              that, I&apos;m grateful.
             </p>
           </div>
         </div>
