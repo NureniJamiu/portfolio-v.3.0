@@ -27,7 +27,7 @@ const Page = () => {
               – It&apos;s somewhere on this page. <br /> <br /> I believe in
               learning things the long (often harder) way. Not because I
               particularly enjoy struggle, but because struggle refines
-              understanding. This website- whatever it is-exists because I
+              understanding. This website-whatever it is-exists because I
               believe in documenting my journey. Whether or not it&apos;s a wise
               use of my time is debatable, but it feels right to carve out a
               space to express my thoughts.
@@ -42,7 +42,7 @@ const Page = () => {
               but because I enjoy understanding how things work, how they break,
               and how they can be fixed. I thrive in that space between{" "}
               <b>creativity and logic</b>, where things either work or they
-              dont&apos;t–no fluff, no pretenses, just raw problem-solving.
+              don&apos;t–no fluff, no pretenses, just raw problem-solving.
             </p>
             <p>
               These few words and the things I create are the only traces of my
@@ -68,7 +68,7 @@ const Page = () => {
               Project Managament, and I&apos;ve had the chance to manage real
               teams–seven different clusters in an NGO, to be precise. It
               wasn&apos;t something I planned, but I enjoy it. Organizing ideas,
-              coordinating people, making sure things move forward–that&apos; a
+              coordinating people, making sure things move forward–that&apos;s a
               kind of problem-solving too. it&apos;s messy, unpredictable, and
               human. And for some reason, I like it.
             </p>
@@ -127,7 +127,7 @@ const Page = () => {
             </p>
             <p>
               You could be anywhere right now, but you&apos;re here. And for
-              that, I&apos;m grateful.
+              that, <b>I&apos;m grateful</b>.
             </p>
           </div>
         </div>
