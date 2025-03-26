@@ -11,12 +11,12 @@ const Page = () => {
       <div className=" text-[#2b2b2b] dark:text-[#dbdbdb] space-y-6">
         <div className="space-y-4">
           <h4 className="text-lg font-bold pt-4 px-4 ">
-            What I&apos;m Building
+            What I&apos;m building
           </h4>
           <p className="px-4 text-[15px]">
-            I&apos;m currently building a{" "}
+            I&apos;m currently building a client&apos;s{" "}
             <Link className="underline" href="https://mcps.xxko.vercel.app">
-              client web app
+              web app
             </Link>{" "}
             (frontend). It&apos;s one of those projects where everything is
             coming together in a way that actually makes me proud. The structure
@@ -29,10 +29,11 @@ const Page = () => {
         </div>
         <div className="space-y-4">
           <h4 className="text-lg font-bold pt-2 px-4 ">
-            What I&apos;m Learning
+            What I&apos;m learning
           </h4>
           <p className="px-4 text-[15px]">
-            Lately, I&apos;ve been reading <b>"The Rules of People"</b> by{" "}
+            Lately, I&apos;ve been reading{" "}
+            <b>&quot;The Rules of People&quot;</b> by{" "}
             <Link
               target="_blank"
               href="https://en.wikipedia.org/wiki/Richard_Templar"
@@ -44,9 +45,10 @@ const Page = () => {
             admit. Something about his writing just always hits. Also, I&apos;m
             knee-deep in figuring out how to make web and mobile apps
             faster—because, apparently, speed is everything. And since I come
-            from a bare-metal React Native background, exploring Expo feels like
-            I&apos;ve been dropped into a futuristic city where everything works
-            differently but somehow better.
+            from a bare-metal <b>React Native</b> background, exploring{" "}
+            <b>Expo</b>
+            feels like I&apos;ve been dropped into a futuristic city where
+            everything works differently but somehow (arguably) better.
           </p>
           <Divider />
         </div>
@@ -60,9 +62,11 @@ const Page = () => {
             leadership stuff—I somehow keep finding myself in positions that
             demand my attention, even when I tell myself I&apos;ll step back.
             Add work to that mix, and you&apos;ve got a schedule that looks like
-            a glitch in the matrix. But I&apos;ve gotten better at planning,
-            prioritizing, and making peace with chaos. So, I guess it&apos;s not
-            all bad.
+            a glitch in the matrix. But I&apos;ve gotten better at{" "}
+            <span className="font-bold underline">
+              planning, prioritizing, and making peace with chaos
+            </span>
+            . So, I guess it&apos;s not all bad.
           </p>
           <Divider />
         </div>
@@ -71,11 +75,15 @@ const Page = () => {
           <p className="px-4 text-[15px]">
             Beyond all that, I actually enjoy spending time with my girlfriend
             (yeah, shocking). She&apos;d probably argue that I don&apos;t say it
-            enough, so here it is, documented for the internet to see. I also
-            write, because words have a way of making things feel more real. And
-            when my brain refuses to shut up, evening/night walks help.
-            Something about the quiet, the empty streets, and the occasional
-            deep thought that may or may not be life-changing.
+            enough, so here it is,{" "}
+            <span className="font-bold">
+              {" "}
+              documented for the internet to see
+            </span>
+            . I also write, because words have a way of making things feel more
+            real. And when my brain refuses to shut up, evening/night walks
+            help. Something about the quiet, the empty streets, and the
+            occasional deep thought that may or may not be life-changing.
           </p>
           <Divider />
         </div>
