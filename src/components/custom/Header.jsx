@@ -101,7 +101,7 @@ const Header = () => {
               >
                 resume
               </Link>
-              <span>/</span>
+              {/* <span>/</span> */}
               {/* <Link
                 href="/notes"
                 className="hover:text-black hover:dark:text-white hover:underline"
