@@ -102,12 +102,12 @@ const Header = () => {
                 resume
               </Link>
               <span>/</span>
-              <Link
+              {/* <Link
                 href="/notes"
                 className="hover:text-black hover:dark:text-white hover:underline"
               >
                 notes
-              </Link>
+              </Link> */}
               <span>/</span>
 
               <Link
