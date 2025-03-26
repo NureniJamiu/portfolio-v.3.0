@@ -42,6 +42,7 @@
         "@supabase/ssr": "^0.5.1",
         "@supabase/supabase-js": "^2.46.1",
         "@uiw/react-md-editor": "^4.0.4",
+        "@vercel/speed-insights": "^1.2.0",
         "axios": "^1.7.7",
         "class-variance-authority": "^0.7.0",
         "clsx": "^2.1.1",
