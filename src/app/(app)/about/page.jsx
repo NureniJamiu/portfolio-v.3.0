@@ -36,8 +36,8 @@ const Page = () => {
                         <p>
                             I believe in learning things the long (often harder)
                             way. Not because I particularly enjoy struggle, but
-                            because struggle refines understanding. This
-                            website-whatever it is-exists because I believe in
+                            because struggle refines understanding. This website
+                            — whatever it is — exists because I believe in
                             documenting my journey. Whether or not it&apos;s a
                             wise use of my time is debatable, but it feels right
                             to carve out a space to express my thoughts.
