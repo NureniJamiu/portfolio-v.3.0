@@ -20,7 +20,7 @@ const Page = () => {
                             </h4>
                         </div>
                         <p className="text-[14px] text-[#727272]">
-                            I promise you, this is gonna be a long read.
+                            This is a somewhat <i>long</i> read.
                         </p>
                     </div>
                     <Divider />
