@@ -7,48 +7,48 @@ import Link from "next/link";
 
 const Page = () => {
   return (
-    <div>
-      <PageTitle
-        title="Works"
-        description="A collection of my personal & client projects."
-      />
-      <div className="space-y-10">
-        <Project
-          name="Marine Critical Parts Supply (MCPS)"
-          liveUrl="mcps.xxko.vercel.app"
-          githubUrl="https://github.com/NureniJamiu/mcps"
-          description="MCPS is a platform that connects Vessels and Offshore Operators with Top Equipments and Parts Suppliers"
-          techStack={techStack[0]}
-        />
-        <Project
-          name="Amatech LASU"
-          liveUrl="amatech-lasu.netlify.app"
-          githubUrl="https://github.com/NureniJamiu/amatech-lasu"
-          description="As the President of the **Association of Project Management Technology** Students in Lagos State University, I designed and developed the first department website which serves a central hub for any information regarding the department."
-          techStack={techStack[1]}
-        />
-        <Project
-          name="Port Scanner"
-          githubUrl="https://github.com/NureniJamiu/port-scanner"
-          description="A full-stack port scanning application built with Python Flask (backend) and React (frontend), demonstrating cybersecurity and software engineering skills."
-          techStack={techStack[2]}
-        />
-        <Project
-          name="PM Ignite"
-          liveUrl="pmignite.vercel.app"
-          githubUrl="https://github.com/NureniJamiu/pmignite"
-          description="Connecting companies in need of project management services with dedicated project managers."
-          techStack={techStack[3]}
-        />
-        <Project
-          name="PLEYDA Website (NGO)"
-          liveUrl="pleyda.vercel.app"
-          githubUrl="https://github.com/NureniJamiu/pleyda"
-          description="Designed and developed a website for the **Purposeful Leadership for Empowerment & Youth Development Association** (PLEYDA), an NGO on a mission to cultivate conscientious youths and equip them with essential and diverse skill sets that foster holistic development."
-          techStack={techStack[0]}
-        />
+      <div>
+          <PageTitle
+              title="Works"
+              description="A collection of my personal & client projects."
+          />
+          <div className="space-y-10">
+              <Project
+                  name="Marine Critical Parts Supply (MCPS)"
+                  liveUrl="marinecriticalparts.com"
+                  githubUrl="https://github.com/NureniJamiu/mcps"
+                  description="MCPS is a platform that connects Vessels and Offshore Operators with Top Equipments and Parts Suppliers"
+                  techStack={techStack[0]}
+              />
+              <Project
+                  name="Amatech LASU"
+                  liveUrl="amatech-lasu.netlify.app"
+                  githubUrl="https://github.com/NureniJamiu/amatech-lasu"
+                  description="As the President of the **Association of Project Management Technology** Students in Lagos State University, I designed and developed the first department website which serves a central hub for any information regarding the department."
+                  techStack={techStack[1]}
+              />
+              <Project
+                  name="Port Scanner"
+                  githubUrl="https://github.com/NureniJamiu/port-scanner"
+                  description="A full-stack port scanning application built with Python Flask (backend) and React (frontend), demonstrating cybersecurity and software engineering skills."
+                  techStack={techStack[2]}
+              />
+              <Project
+                  name="PM Ignite"
+                  liveUrl="pmignite.vercel.app"
+                  githubUrl="https://github.com/NureniJamiu/pmignite"
+                  description="Connecting companies in need of project management services with dedicated project managers."
+                  techStack={techStack[3]}
+              />
+              <Project
+                  name="PLEYDA Website (NGO)"
+                  liveUrl="pleyda.vercel.app"
+                  githubUrl="https://github.com/NureniJamiu/pleyda"
+                  description="Designed and developed a website for the **Purposeful Leadership for Empowerment & Youth Development Association** (PLEYDA), an NGO on a mission to cultivate conscientious youths and equip them with essential and diverse skill sets that foster holistic development."
+                  techStack={techStack[0]}
+              />
+          </div>
       </div>
-    </div>
   );
 };
 
