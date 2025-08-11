@@ -21,30 +21,31 @@ const Page = () => {
                   techStack={techStack[0]}
               />
               <Project
-                  name="Amatech LASU"
-                  liveUrl="amatech-lasu.netlify.app"
-                  githubUrl="https://github.com/NureniJamiu/amatech-lasu"
-                  description="As the President of the **Association of Project Management Technology** Students in Lagos State University, I designed and developed the first department website which serves a central hub for any information regarding the department."
+                  name="Screenforge"
+                  liveUrl="screenforge.nurenijamiu.tech"
+                  githubUrl="https://github.com/NureniJamiu/screenforge"
+                  description="A comprehensive screen recording tool with built-in video editing and sophisticated sharing controls."
                   techStack={techStack[1]}
               />
               <Project
-                  name="Port Scanner"
-                  githubUrl="https://github.com/NureniJamiu/port-scanner"
-                  description="A full-stack port scanning application built with Python Flask (backend) and React (frontend), demonstrating cybersecurity and software engineering skills."
+                  name="Ekopulse"
+                  liveUrl="https://ekopulse.nurenijamiu.tech"
+                  githubUrl="https://github.com/NureniJamiu/ekopulse"
+                  description="EkoPulse is a comprehensive web application designed to help citizens of Lagos, Nigeria report environmental issues and enable authorities to track and respond to them efficiently. The platform features real-time updates, interactive mapping, and role-based access control."
                   techStack={techStack[2]}
               />
               <Project
-                  name="PM Ignite"
-                  liveUrl="pmignite.vercel.app"
-                  githubUrl="https://github.com/NureniJamiu/pmignite"
-                  description="Connecting companies in need of project management services with dedicated project managers."
+                  name="Amalearn"
+                  liveUrl="amatech.nurenijamiu.tech"
+                  githubUrl="https://github.com/NureniJamiu/amatech-learning-hub"
+                  description="A comprehensive learning management system developed for the Association of Management Technology Students (AMATECH) at Lagos State University"
                   techStack={techStack[3]}
               />
               <Project
-                  name="PLEYDA Website (NGO)"
-                  liveUrl="pleyda.vercel.app"
-                  githubUrl="https://github.com/NureniJamiu/pleyda"
-                  description="Designed and developed a website for the **Purposeful Leadership for Empowerment & Youth Development Association** (PLEYDA), an NGO on a mission to cultivate conscientious youths and equip them with essential and diverse skill sets that foster holistic development."
+                  name="Amatech Voting System"
+                  // liveUrl="amatech.nurenijamiu.tech"
+                  githubUrl="https://github.com/NureniJamiu/amatech-voting-system"
+                  description="An online voting web application for the department of Management Technology, Lagos State University (LASU)."
                   techStack={techStack[0]}
               />
           </div>
