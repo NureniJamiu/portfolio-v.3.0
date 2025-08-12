@@ -215,34 +215,34 @@ export const designResources = `
 export const bookmarksTableHeader = ["title", "body", "url", "actions"];
 
 export const techStack = [
-  `
+    `
     - Nextjs
     - React
     - Tailwind
     - Vercel
 `,
-  `
-    - Nextjs
+    `
     - React
+    - Node.js
     - Tailwind
     - Clerk
     - Vercel
 `,
-  `
+    `
     - React
     - Vite
-    - Python (Flask)
+    - Node.js
     - Axios
     - Tailwind
 `,
-  `
+    `
     - Nextjs
     - React
     - Shadcn UI
     - Tailwind
     - Vercel
 `,
-  `
+    `
     - React
     - Vite
     - TypeScript
