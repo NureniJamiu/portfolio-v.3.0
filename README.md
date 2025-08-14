@@ -1,34 +1,85 @@
-## Getting Started
 
-First, run the development server:
+# Nureni Jamiu – Portfolio v3.0
+
+> A modern, feature-rich personal portfolio built with Next.js, Tailwind CSS, and Bun. Showcasing my work, skills, blog, and more.
+
+---
+
+## 🚀 About Me
+
+Hi! I'm **Nureni Jamiu**, a passionate software developer focused on building impactful web applications and digital experiences. This portfolio is a reflection of my journey, skills, and projects.
+
+## 🖥️ Project Overview
+
+**Portfolio v3.0** is a fully responsive, fast, and interactive web app designed to:
+- Present my professional background and resume
+- Showcase selected works and projects
+- Share blog posts, notes, and changelogs
+- Provide quick access to bookmarks, timeline, and more
+- Enable easy contact and networking
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js
+- **Styling:** Tailwind CSS, PostCSS
+- **Bundler:** Bun
+- **State/Data:** Supabase, Axios
+- **Validation:** Yup
+- **UI Components:** Custom, MagicUI, Shadcn/UI
+
+## 📁 Main Features
+
+- **Home & About:** Introduction, video, and personal story
+- **Works & Projects:** Interactive charts, project details, and live demos
+- **Blogroll & Notes:** Technical articles, personal notes, and changelogs
+- **Resume:** Downloadable CV and professional timeline
+- **Bookmarks:** Curated resources and links
+- **Theme Switcher:** Light/dark mode toggle
+- **Authentication:** Secure login (admin area)
+- **Admin Dashboard:** Manage content, view analytics
+
+## 🏗️ Getting Started
+
+Clone the repo and install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/NureniJamiu/portfolio-v.3.0.git
+cd portfolio-v.3.0
+bun install # or npm/yarn/pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run the development server:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+bun dev # or npm run dev / yarn dev / pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## 📂 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+- `src/app`: Main app pages and layouts
+- `src/components`: Reusable UI components
+- `src/assets`: Images and media
+- `src/utils`: Utility functions and Supabase integration
+- `src/mockdata`: Demo/mock data
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📈 Analytics & Performance
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Fast load times with Bun
+- Optimized fonts and images
+- Interactive charts and dashboards
 
-## Deploy on Vercel
+## 📬 Contact & Socials
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Email:** nurenijamiu@gmail.com
+- **LinkedIn:** [linkedin.com/in/nurenijamiu](https://linkedin.com/in/nurenijamiu)
+- **GitHub:** [github.com/NureniJamiu](https://github.com/NureniJamiu)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 📝 License
+
+This project is open source and available under the MIT License.
+
+---
+
+> Built and maintained by Nureni Jamiu. Thank you for visiting!
