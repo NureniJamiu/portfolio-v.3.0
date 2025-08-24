@@ -11,13 +11,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${jetBrainsMono.className} relative bg-[#f3f3f3] dark:bg-black dark:text-white`}
-      >
-        {children}
-        <SpeedInsights />
-      </body>
-    </html>
+      <html lang="en">
+          <body
+              className={`${jetBrainsMono.className} relative bg-[#f3f3f3] dark:bg-black dark:text-white`}
+          >
+              {children}
+              <SpeedInsights />
+          </body>
+      </html>
   );
 }
