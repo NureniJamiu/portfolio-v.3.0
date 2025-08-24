@@ -29,7 +29,7 @@ const Page = () => {
               />
               <Project
                   name="Ekopulse"
-                  liveUrl="https://ekopulse.nurenijamiu.tech"
+                  liveUrl="ekopulse.nurenijamiu.tech"
                   githubUrl="https://github.com/NureniJamiu/ekopulse"
                   description="EkoPulse is a comprehensive web application designed to help citizens of Lagos, Nigeria report environmental issues and enable authorities to track and respond to them efficiently. The platform features real-time updates, interactive mapping, and role-based access control."
                   techStack={techStack[2]}
