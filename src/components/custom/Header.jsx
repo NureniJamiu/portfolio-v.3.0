@@ -15,120 +15,133 @@ const Header = () => {
   };
 
   return (
-    <>
-      <Pallete />
-      <div className="px-4">
-        <div className="my-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <Link href="/" className="font-semibold text-[15px]">
-                Nureni O. Jamiu
-              </Link>
-              <ThemeSwitcher />
-            </div>
+      <>
+          <Pallete />
+          <div className="px-4 md:px-8">
+              <div className="my-4">
+                  <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                          <Link href="/" className="font-semibold text-[15px]">
+                              Nureni O. Jamiu
+                          </Link>
+                          <ThemeSwitcher />
+                      </div>
 
-            <div className="md:hidden cursor-pointer" onClick={toggleMenu}>
-              <PanelRightOpen
-                size={24}
-                className="text-neutral-900 dark:text-neutral-400"
-              />
-            </div>
+                      <div
+                          className="md:hidden cursor-pointer"
+                          onClick={toggleMenu}
+                      >
+                          <PanelRightOpen
+                              size={24}
+                              className="text-neutral-900 dark:text-neutral-400"
+                          />
+                      </div>
 
-            <div className="hidden md:flex items-center gap-2">
-              <Link
-                href="https://www.linkedin.com/in/nurenijamiu/"
-                className="text-[14px] text-[#2b2b2b] dark:text-[#B8B8B8] hover:text-black hover:dark:text-white group"
-                target="_blank"
-              >
-                <span className="group-hover:underline">Linkedin</span>{" "}
-                <span className="group-hover:no-underline"> /</span>
-              </Link>
-              <Link
-                href="https://www.github.com/NureniJamiu"
-                className="text-[14px] text-[#2b2b2b] dark:text-[#B8B8B8] hover:text-black hover:dark:text-white group"
-                target="_blank"
-              >
-                <span className="group-hover:underline">Github</span>{" "}
-                <span className="group-hover:no-underline"> /</span>
-              </Link>
-              <Link
-                href="https://mastodon.social/@penocrat"
-                className="text-[14px] text-[#2b2b2b] dark:text-[#B8B8B8] hover:text-black hover:dark:text-white hover:underline"
-                target="_blank"
-              >
-                Mastodon
-              </Link>
-            </div>
-          </div>
-          <div className="flex items-center justify-between relative overflow-hidden">
-            {/* Job title with animation */}
-            <div
-              className={`text-[14px] text-[#727272] transition-transform duration-300 md:hidden ${
-                isMenuOpen
-                  ? "-translate-x-full opacity-0"
-                  : "translate-x-0 opacity-100"
-              }`}
-            >
-              Web Developer at BoughView Innovations
-            </div>
+                      <div className="hidden md:flex items-center gap-2">
+                          <Link
+                              href="https://www.linkedin.com/in/nurenijamiu/"
+                              className="text-[14px] text-[#2b2b2b] dark:text-[#B8B8B8] hover:text-black hover:dark:text-white group"
+                              target="_blank"
+                          >
+                              <span className="group-hover:underline">
+                                  Linkedin
+                              </span>{" "}
+                              <span className="group-hover:no-underline">
+                                  {" "}
+                                  /
+                              </span>
+                          </Link>
+                          <Link
+                              href="https://www.github.com/NureniJamiu"
+                              className="text-[14px] text-[#2b2b2b] dark:text-[#B8B8B8] hover:text-black hover:dark:text-white group"
+                              target="_blank"
+                          >
+                              <span className="group-hover:underline">
+                                  Github
+                              </span>{" "}
+                              <span className="group-hover:no-underline">
+                                  {" "}
+                                  /
+                              </span>
+                          </Link>
+                          <Link
+                              href="https://mastodon.social/@penocrat"
+                              className="text-[14px] text-[#2b2b2b] dark:text-[#B8B8B8] hover:text-black hover:dark:text-white hover:underline"
+                              target="_blank"
+                          >
+                              Mastodon
+                          </Link>
+                      </div>
+                  </div>
+                  <div className="flex items-center justify-between relative overflow-hidden">
+                      {/* Job title with animation */}
+                      <div
+                          className={`text-[14px] text-[#727272] transition-transform duration-300 md:hidden ${
+                              isMenuOpen
+                                  ? "-translate-x-full opacity-0"
+                                  : "translate-x-0 opacity-100"
+                          }`}
+                      >
+                          Web Developer at BoughView Innovations
+                      </div>
 
-            {/* Mobile navigation links that slide in */}
-            <div
-              className={`absolute md:static md:translate-x-0 md:opacity-100 left-0 flex items-center gap-2 text-[14px] text-[#2b2b2b] dark:text-neutral-500 transition-transform duration-300 ${
-                isMenuOpen
-                  ? "translate-x-0 opacity-100"
-                  : "translate-x-full opacity-0"
-              }`}
-            >
-              <span>~</span>
-              <Link
-                href="/about"
-                className="hover:text-black hover:dark:text-white hover:underline"
-              >
-                about
-              </Link>
-              <span>/</span>
-              <Link
-                href="/works"
-                className="hover:text-black hover:dark:text-white hover:underline"
-              >
-                works
-              </Link>
-              <span>/</span>
-              <Link
-                href="/resume"
-                className="hover:text-black hover:dark:text-white hover:underline"
-              >
-                resume
-              </Link>
-              {/* <span>/</span> */}
-              {/* <Link
+                      {/* Mobile navigation links that slide in */}
+                      <div
+                          className={`absolute md:static md:translate-x-0 md:opacity-100 left-0 flex items-center gap-2 text-[14px] text-[#2b2b2b] dark:text-neutral-500 transition-transform duration-300 ${
+                              isMenuOpen
+                                  ? "translate-x-0 opacity-100"
+                                  : "translate-x-full opacity-0"
+                          }`}
+                      >
+                          <span>~</span>
+                          <Link
+                              href="/about"
+                              className="hover:text-black hover:dark:text-white hover:underline"
+                          >
+                              about
+                          </Link>
+                          <span>/</span>
+                          <Link
+                              href="/works"
+                              className="hover:text-black hover:dark:text-white hover:underline"
+                          >
+                              works
+                          </Link>
+                          <span>/</span>
+                          <Link
+                              href="/resume"
+                              className="hover:text-black hover:dark:text-white hover:underline"
+                          >
+                              resume
+                          </Link>
+                          {/* <span>/</span> */}
+                          {/* <Link
                 href="/notes"
                 className="hover:text-black hover:dark:text-white hover:underline"
               >
                 notes
               </Link> */}
-              <span>/</span>
+                          <span>/</span>
 
-              <Link
-                href="/now"
-                className="hover:text-black hover:dark:text-white hover:underline"
-              >
-                now
-              </Link>
-            </div>
+                          <Link
+                              href="/now"
+                              className="hover:text-black hover:dark:text-white hover:underline"
+                          >
+                              now
+                          </Link>
+                      </div>
 
-            <span className="hidden md:flex items-center gap-1">
-              <span className="inline-block w-2 h-2 bg-green-600 rounded-full animate-pulse"></span>
-              <span className="text-[14px] text-[#727272]">
-                All systems operational
-              </span>
-            </span>
+                      <span className="hidden md:flex items-center gap-1">
+                          <span className="inline-block w-2 h-2 bg-green-600 rounded-full animate-pulse"></span>
+                          <span className="text-[14px] text-[#727272]">
+                              All systems operational
+                          </span>
+                      </span>
+                  </div>
+              </div>
           </div>
-        </div>
-      </div>
-      <Divider />
-    </>
+          <Divider />
+      </>
   );
 };
 
