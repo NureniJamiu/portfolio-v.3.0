@@ -47,23 +47,23 @@ const Page = () => {
                             not so obviously. I started with code because it was
                             something I could learn on my own, something
                             concrete. It made sense. Over time, that curiosity
-                            pulled me into <b>cybersecurity</b>, then into{" "}
-                            <b>web development</b>, then into{" "}
-                            <b>project management</b>. Different directions,
+                            pulled me into <b>Cybersecurity</b>, then back into{" "}
+                            <b>Web Development</b>, then into{" "}
+                            <b>Project Management</b>. Different directions,
                             same mind. I didn&apos;t plan it that way. I just
                             kept following what made me curious and what
                             didn&apos;t leave me alone.
                         </p>
                         <p>
                             Most days, I don&apos;t have a neat story to tell
-                            about how it all fits. I&apos;ve led teams and also
-                            broken things apart just to see how they work.
-                            I&apos;ve written software, built security tools,
-                            managed people, and spent hours just thinking.
-                            It&apos;s not always clear how these experiences
-                            relate. But deep down, I believe the dots will
-                            connect. Maybe not today, maybe not soon, but
-                            eventually.
+                            about how it all fits. I&apos;ve led teams (however
+                            small) and also broken things apart just to see how
+                            they work. I&apos;ve developed web apps, built
+                            security tools, managed people, and spent hours just
+                            thinking. It&apos;s not always clear how these
+                            experiences relate. But deep down, I believe the
+                            dots will connect. Maybe not today, maybe not soon,
+                            but eventually.
                         </p>
                         <p>Right now, I&apos;m still creating the dots.</p>
                         <p>
@@ -72,7 +72,7 @@ const Page = () => {
                             look scattered, and still be a path. There&apos;s
                             something freeing in that. I&apos;ve stopped trying
                             to force it all in a clean narrative. Instead,
-                            I&apos;m leaning into the unknown — building,
+                            I&apos;m leaning into the unknown, like building,
                             messing up, and trying again. There&apos;s a quiet
                             kind of excitement in not knowing where it&apos;s
                             all leading (not fear though, just curiosity).
@@ -81,26 +81,26 @@ const Page = () => {
                             I grew up in rural Nigeria, where access to
                             technology was limited. That reality made the
                             internet feel both miraculous and alien. It also
-                            made me think deeply about accessibility — not just
-                            in apps, but in knowledge. That part of me is still
-                            here, still questioning who gets left out and how we
-                            can do better.
+                            made me think deeply about accessibility, which is
+                            not just in apps, but in knowledge. That part of me
+                            is still here, still questioning who gets left out
+                            and how we can do better.
                         </p>
                         <p>
                             I&apos;m not building things to chase trends. I
                             build because I want to understand. I want to solve
-                            real problems. I like the space where creativity
-                            meets logic — where things either work or they
-                            don&apos;t. I like that clarity. It&apos;s honest.
+                            real problems. Because I like the space where
+                            creativity meets logic; where things either work or
+                            they don&apos;t. I like that clarity. It&apos;s
+                            honest.
                         </p>
                         <p>
                             Somewhere along the line, I started managing
                             projects. Not because I wanted to be in charge, but
                             because I cared about making ideas move forward. I
-                            learned to coordinate people, solve messy human
-                            problems, and keep things going even when nothing
-                            goes as planned. That, too, felt connected to the
-                            rest — just in a different way.
+                            learned to coordinate people, and keep things going
+                            even when nothing goes as planned. That, too, felt
+                            connected to the rest, just in a different way.
                         </p>
                         <p>
                             Most of what I know, I learned by doing. Reading
@@ -119,12 +119,13 @@ const Page = () => {
                         </p>
                         <p>
                             I don&apos;t spend much time thinking about the
-                            hottest tech stacks or the latest frameworks. They
-                            change too often to matter. I focus on building
-                            things in the simplest way possible. Most new things
-                            are noise. I care about building useful things; the
-                            kind that quietly do their job without needing
-                            attention.
+                            hottest tech stacks or the latest frameworks (but
+                            that doesn&apos;t mean I don&apos;t have my
+                            favorites). They change too often to matter. I focus
+                            on building things in the simplest way possible.
+                            Most new things are noise. I care about building
+                            useful things; the kind that quietly do their job
+                            without needing attention.
                         </p>
                         <p>
                             I still don&apos;t know how it all ties together. I
@@ -146,7 +147,7 @@ const Page = () => {
                         <p>One dot at a time.</p>
                         <p>
                             You could be anywhere right now, but you&apos;re
-                            here. And for that, <b>I&apos;m grateful</b>.
+                            here. And for that, <b>I&apos;m grateful</b>.🙏😊
                         </p>
                     </div>
                 </div>
