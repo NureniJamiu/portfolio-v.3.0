@@ -1,29 +1,48 @@
+import ShowcaseCard from "@/components/custom/ShowcaseCard";
 import React from "react";
 
 const Page = () => {
-  return (
-    <div className="relative isolate min-h-screen bg-white dark:bg-black">
-      {/* Left Border Pattern */}
-      <div className="hidden md:block absolute inset-y-0 left-0 w-6 z-0
-        bg-[image:repeating-linear-gradient(315deg,_#0000000d_0,_#0000000d_1px,_transparent_0,_transparent_50%)]
-        dark:bg-[image:repeating-linear-gradient(315deg,_#ffffff1a_0,_#ffffff1a_1px,_transparent_0,_transparent_50%)]
-        bg-[size:10px_10px] bg-fixed"></div>
+    return (
+        <div className="relative isolate min-h-screen bg-white dark:bg-black">
+            {/* Main Content */}
+            <main className="relative z-10 px-4 py-20 text-center text-gray-900 dark:text-white">
+                <h1 className="text-3xl font-bold">Project Showcase</h1>
+                <p className="mt-4 text-lg">
+                    Here is a clean showcase of my projects.
+                </p>
 
-      {/* Right Border Pattern */}
-      <div className="hidden md:block absolute inset-y-0 right-0 w-6 z-0
-        bg-[image:repeating-linear-gradient(315deg,_#0000000d_0,_#0000000d_1px,_transparent_0,_transparent_50%)]
-        dark:bg-[image:repeating-linear-gradient(315deg,_#ffffff1a_0,_#ffffff1a_1px,_transparent_0,_transparent_50%)]
-        bg-[size:10px_10px] bg-fixed"></div>
-
-      {/* Main Content */}
-      <main className="relative z-10 px-4 py-20 text-center text-gray-900 dark:text-white">
-        <h1 className="text-3xl font-bold">Changelog</h1>
-        <p className="mt-4 text-lg">
-          This page uses repeating linear gradients as decorative borders.
-        </p>
-      </main>
-    </div>
-  );
+                {/* ShowcaseCard Demo  */}
+                <div className="grid md:grid-cols-2 gap-6 mt-10 border-y border-neutral-800">
+                    <ShowcaseCard
+                        title="Screenforge"
+                        imageSrc="/images/screenforge.png"
+                        videoSrc={"/videos/screenforge.webm"}
+                        description="Record, Edit, and Share like a pro"
+                    />
+                    <ShowcaseCard
+                        title="Ekopulse"
+                        imageSrc="/images/ekopulse.png"
+                        videoSrc={"/videos/screenforge.webm"}
+                        description="The IDE with superpowers."
+                    />
+                </div>
+                {/* <div className="grid md:grid-cols-2 gap-6 mt-10 border-y border-neutral-800">
+                    <ShowcaseCard
+                        title="NX-IDE"
+                        imageSrc="/images/preview.png"
+                        videoSrc={"/videos/preview.webm"}
+                        description="The IDE with superpowers."
+                    />
+                    <ShowcaseCard
+                        title="NX-IDE"
+                        imageSrc="/images/preview.png"
+                        videoSrc={"/videos/preview.webm"}
+                        description="The IDE with superpowers."
+                    />
+                </div> */}
+            </main>
+        </div>
+    );
 };
 
 export default Page;

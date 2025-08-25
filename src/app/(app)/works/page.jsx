@@ -1,56 +1,112 @@
 import Divider from "@/components/custom/Divider";
 import MarkdownComponent from "@/components/custom/MarkdownComponent";
 import PageTitle from "@/components/custom/PageTitle";
+import ShowcaseCard from "@/components/custom/ShowcaseCard";
 import { techStack } from "@/mockdata/mockData";
 import { ExternalLink, GitBranch } from "lucide-react";
 import Link from "next/link";
 
 const Page = () => {
-  return (
-      <div>
-          <PageTitle
-              title="Works"
-              description="A collection of my personal & client projects."
-          />
-          <div className="space-y-10">
-              <Project
-                  name="Marine Critical Parts Supply (MCPS)"
-                  liveUrl="marinecriticalparts.com"
-                  githubUrl="https://github.com/NureniJamiu/mcps"
-                  description="MCPS is a platform that connects Vessels and Offshore Operators with Top Equipments and Parts Suppliers"
-                  techStack={techStack[0]}
-              />
-              <Project
-                  name="Screenforge"
-                  liveUrl="screenforge.nurenijamiu.tech"
-                  githubUrl="https://github.com/NureniJamiu/screenforge"
-                  description="A comprehensive screen recording tool with built-in video editing and sophisticated sharing controls."
-                  techStack={techStack[1]}
-              />
-              <Project
-                  name="Ekopulse"
-                  liveUrl="ekopulse.nurenijamiu.tech"
-                  githubUrl="https://github.com/NureniJamiu/ekopulse"
-                  description="EkoPulse is a comprehensive web application designed to help citizens of Lagos, Nigeria report environmental issues and enable authorities to track and respond to them efficiently. The platform features real-time updates, interactive mapping, and role-based access control."
-                  techStack={techStack[2]}
-              />
-              <Project
-                  name="Amalearn"
-                  liveUrl="amatech.nurenijamiu.tech"
-                  githubUrl="https://github.com/NureniJamiu/amatech-learning-hub"
-                  description="A comprehensive learning management system developed for the Association of Management Technology Students (AMATECH) at Lagos State University"
-                  techStack={techStack[3]}
-              />
-              <Project
-                  name="Amatech Voting System"
-                  // liveUrl="amatech.nurenijamiu.tech"
-                  githubUrl="https://github.com/NureniJamiu/amatech-voting-system"
-                  description="An online voting web application for the department of Management Technology, Lagos State University (LASU)."
-                  techStack={techStack[0]}
-              />
-          </div>
-      </div>
-  );
+    return (
+        <div>
+            <PageTitle
+                title="Works"
+                description="A showcase of some of my projects."
+            />
+            <div className="grid md:grid-cols-2 gap-6 mt-10 border-y border-neutral-800">
+                <ShowcaseCard
+                    title="Marine Critical Parts Supply (MCPS)"
+                    imageSrc="/images/mcps.png"
+                    videoSrc="/videos/mcps.webm"
+                    description="An easy-to-use platform that connects vessels & offshore operators with top equipment & part suppliers."
+                    devTools={[
+                        "NextJS",
+                        "TypeScript",
+                        "TailwindCSS",
+                        "Tanstack query",
+                        "Framer motion",
+                        "Axios",
+                        "Vercel",
+                    ]}
+                />
+                <ShowcaseCard
+                    title="Ekopulse"
+                    imageSrc="/images/ekopulse.png"
+                    videoSrc={"/videos/ekopulse.webm"}
+                    description="A comprehensive web application designed to help citizens of Lagos, Nigeria report environmental issues and enable authorities to track and respond to them efficiently."
+                    devTools={[
+                        "TypeScript",
+                        "ReactJS",
+                        "TailwindCSS",
+                        "NodeJS",
+                        "Socket.io",
+                        "Leaflet",
+                        "Yup",
+                        "Mongoose",
+                        "Cloudinary",
+                        "Axios",
+                        "Clerk",
+                        "Vercel",
+                    ]}
+                />
+            </div>
+            <div className="grid md:grid-cols-2 gap-6 mt-10 border-y border-neutral-800">
+                <ShowcaseCard
+                    title="Screenforge"
+                    imageSrc="/images/screenforge.png"
+                    videoSrc={"/videos/screenforge.webm"}
+                    description="A professional screen recording tool with built-in video editing and sophisticated sharing controls."
+                    devTools={[
+                        "TypeScript",
+                        "ReactJS",
+                        "React router",
+                        "Zustand",
+                        "TailwindCSS",
+                        "NodeJS",
+                        "PrismaORM",
+                        "Postgresql",
+                        "Axios",
+                        "Ffmpeg",
+                        "Cloudinary",
+                        "Clerk",
+                        "Vercel",
+                    ]}
+                />
+                <ShowcaseCard
+                    title="AmaLearn"
+                    imageSrc="/images/amalearn.png"
+                    videoSrc={"/videos/amalearn.webm"}
+                    description="A comprehensive learning management system developed for the Association of Management Technology Students (AMATECH) at Lagos State University"
+                    devTools={[
+                        "NextJS",
+                        "TypeScript",
+                        "PDF parse",
+                        "Zod",
+                        "Zustand",
+                        "TailwindCSS",
+                        "PrismaORM",
+                        "NodeJS",
+                        "Langchain",
+                        "Postgresql",
+                        "PineconeDB",
+                        "Axios",
+                        "Cloudinary",
+                        "Clerk",
+                        "Vercel",
+                    ]}
+                />
+            </div>
+            <div className="space-y-10">
+                <Project
+                    name="Amatech Voting System"
+                    // liveUrl="amatech.nurenijamiu.tech"
+                    githubUrl="https://github.com/NureniJamiu/amatech-voting-system"
+                    description="An online voting web application for the department of Management Technology, Lagos State University (LASU)."
+                    techStack={techStack[0]}
+                />
+            </div>
+        </div>
+    );
 };
 
 export default Page;
