@@ -2,14 +2,14 @@ import * as React from "react"
 const SvgComponent = (props) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={978}
+        width={878}
         height={527}
         fill="none"
         {...props}
     >
         <mask
             id="b"
-            width={978}
+            width={878}
             height={527}
             x={0}
             y={0}
