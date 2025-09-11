@@ -94,7 +94,7 @@ const showcaseProjects = [
             "Clerk",
             "Vercel",
         ],
-        liveUrl: "https://amalearn.nurenijamiu.tech",
+        liveUrl: "https://amatech.nurenijamiu.tech",
     },
 ];
 
@@ -118,7 +118,6 @@ const Page = () => {
                 <div className="space-y-10 mt-10">
                     <Project
                         name="Amatech Voting System"
-                        liveUrl="amatech.nurenijamiu.tech"
                         githubUrl="https://github.com/NureniJamiu/amatech-voting-system"
                         description="An online voting web application for the department of Management Technology, Lagos State University (LASU)."
                         techStack={techStack[0]}
