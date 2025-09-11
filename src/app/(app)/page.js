@@ -7,8 +7,8 @@ export default function Home() {
     return (
         <>
             {/* Keyboard SVG at top right */}
-            <div className="absolute top-4 right-1 md:right-16 -z-10 overflow-hidden pointer-events-none">
-                <KeyboardSvg className="hidden dark:block opacity-75 overflow-hidden" />
+            <div className="absolute top-4 right-1 md:right-16 -z-10 pointer-events-none">
+                <KeyboardSvg className="hidden md:block dark:block opacity-75" />
             </div>
             <main className="md:pb-20 relative">
                 <PageTitle
