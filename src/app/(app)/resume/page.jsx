@@ -8,89 +8,100 @@ import { certificates, techStack, workExperience } from "@/mockdata/mockData";
 
 import BOUGHVIEW_LOGO from "@/assets/images/boughview.png";
 import CHINGU_LOGO from "@/assets/images/chingu.png";
+import CvSvg from "@/components/custom/CvSvg";
 
 const Page = () => {
-  return (
-    <div>
-      <PageTitle
-        title="Resume"
-        description="Web Developer who enjoys working at the intersection of design and engineering teams. Currently a part of the frontend team at Boughview Innovations."
-      />
-      <div>
-        <h4 className="text-lg font-bold pt-4 px-4">Work Experience</h4>
-        <div className="space-y-10">
-          <ResumeCard
-            name="Boughview Innovations"
-            companyUrl="https://boughview.vercel.app"
-            image={BOUGHVIEW_LOGO}
-            duration={"May 2023 - Present"}
-            experience={workExperience[0]}
-            techStack={techStack[4]}
-          />
-          <ResumeCard
-            name="Chingu Inc."
-            companyUrl="https://chingu.io"
-            image={CHINGU_LOGO}
-            duration={"Jan 2023 - June 2023"}
-            experience={workExperience[1]}
-            techStack={techStack[0]}
-          />
-        </div>
-      </div>
-
-      <div className="mt-5">
-        <h4 className="text-lg font-bold pt-4 px-4">Education</h4>
-        <div className="space-y-2">
-          <EducationCard
-            name="BSC. Computer Science"
-            graduationDate="In View: 2027"
-            institute="International University of Applied Sciences"
-          />
-          <EducationCard
-            name="BTech. Project Management Technology"
-            graduationDate="In View: 2027"
-            institute="Lagos State University"
-          />
-          <EducationCard
-            name="Diploma in Software Engineering"
-            graduationDate={"2022 - 2023"}
-            institute={"ALX Africa"}
-          />
-          <EducationCard
-            name="Fullstack Web Development"
-            graduationDate={"2021 - 2022"}
-            institute={"Lofty Inc, Digital Skills Academy"}
-          />
-          <EducationCard
-            name="High School Certificate"
-            graduationDate={"2009 - 2014"}
-            institute={"Newtrend High School"}
-          />
-        </div>
-      </div>
-
-      <div className="mt-5">
-        <h4 className="text-lg font-bold pt-4 px-4">Certificates</h4>
-        <div className="grid md:grid-cols-2 gap-2">
-          {certificates.map((certificate, index) => (
-            <div key={index}>
-              <div className="p-4 space-y-1  text-[#2b2b2b] dark:text-[#dbdbdb]">
-                <div className="flex items-baseline md:justify-between font-semibold gap-2">
-                  <span className="dark:text-neutral-300">
-                    {certificate.title}
-                  </span>
-                </div>
-                <div className="text-[#727272] text-[13px]">
-                  <p>{certificate.issuer}</p>
-                </div>
-              </div>
-              <Divider type="border-dashed" />
+    return (
+        <>
+            {/* CV SVG at top right */}
+            <div className="absolute top-2 right-10 -z-10">
+                <CvSvg className="hidden md:block stroke-1 stroke-black dark:stroke-white fill-none opacity-10" />
             </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
+            <div>
+                <PageTitle
+                    title="Resume"
+                    description="Web Developer who enjoys working at the intersection of design and engineering teams. Currently a part of the frontend team at Boughview Innovations."
+                />
+                <div>
+                    <h4 className="text-lg font-bold pt-4 px-4">
+                        Work Experience
+                    </h4>
+                    <div className="space-y-10">
+                        <ResumeCard
+                            name="Boughview Innovations"
+                            companyUrl="https://boughview.vercel.app"
+                            image={BOUGHVIEW_LOGO}
+                            duration={"May 2023 - Present"}
+                            experience={workExperience[0]}
+                            techStack={techStack[4]}
+                        />
+                        <ResumeCard
+                            name="Chingu Inc."
+                            companyUrl="https://chingu.io"
+                            image={CHINGU_LOGO}
+                            duration={"Jan 2023 - June 2023"}
+                            experience={workExperience[1]}
+                            techStack={techStack[0]}
+                        />
+                    </div>
+                </div>
+
+                <div className="mt-5">
+                    <h4 className="text-lg font-bold pt-4 px-4">Education</h4>
+                    <div className="space-y-2">
+                        <EducationCard
+                            name="BSC. Computer Science"
+                            graduationDate="In View: 2027"
+                            institute="International University of Applied Sciences"
+                        />
+                        <EducationCard
+                            name="BTech. Project Management Technology"
+                            graduationDate="In View: 2027"
+                            institute="Lagos State University"
+                        />
+                        <EducationCard
+                            name="Diploma in Software Engineering"
+                            graduationDate={"2022 - 2023"}
+                            institute={"ALX Africa"}
+                        />
+                        <EducationCard
+                            name="Fullstack Web Development"
+                            graduationDate={"2021 - 2022"}
+                            institute={"Lofty Inc, Digital Skills Academy"}
+                        />
+                        <EducationCard
+                            name="High School Certificate"
+                            graduationDate={"2009 - 2014"}
+                            institute={"Newtrend High School"}
+                        />
+                    </div>
+                </div>
+
+                <div className="mt-5">
+                    <h4 className="text-lg font-bold pt-4 px-4">
+                        Certificates
+                    </h4>
+                    <div className="grid md:grid-cols-2 gap-2">
+                        {certificates.map((certificate, index) => (
+                            <div key={index}>
+                                <div className="p-4 space-y-1  text-[#2b2b2b] dark:text-[#dbdbdb]">
+                                    <div className="flex items-baseline md:justify-between font-semibold gap-2">
+                                        <span className="dark:text-neutral-300">
+                                            {certificate.title}
+                                        </span>
+                                    </div>
+                                    <div className="text-[#727272] text-[13px]">
+                                        <p>{certificate.issuer}</p>
+                                    </div>
+                                </div>
+                                <Divider type="border-dashed" />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </>
+    );
 };
 
 export default Page;

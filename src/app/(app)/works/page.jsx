@@ -6,6 +6,7 @@ import { techStack } from "@/mockdata/mockData";
 import { ExternalLink, GitBranch } from "lucide-react";
 import Link from "next/link";
 
+import SuitcaseSvg from "@/components/custom/SuitcaseSvg";
 
 const showcaseProjects = [
     {
@@ -99,26 +100,32 @@ const showcaseProjects = [
 
 const Page = () => {
     return (
-        <div>
-            <PageTitle
-                title="Works"
-                description="A showcase of some of my projects."
-            />
-            <div className="grid md:grid-cols-2 gap-6 mt-10 border-y border-neutral-800">
-                {showcaseProjects.map((project, idx) => (
-                    <ShowcaseCard key={project.title + idx} {...project} />
-                ))}
+        <>
+            {/* Suitcase SVG at top right */}
+            <div className="absolute top-4 left-20 z-10">
+                <SuitcaseSvg className="hidden md:block stroke-1 stroke-black dark:stroke-white fill-none opacity-15" />
             </div>
-            <div className="space-y-10 mt-10">
-                <Project
-                    name="Amatech Voting System"
-                    liveUrl="amatech.nurenijamiu.tech"
-                    githubUrl="https://github.com/NureniJamiu/amatech-voting-system"
-                    description="An online voting web application for the department of Management Technology, Lagos State University (LASU)."
-                    techStack={techStack[0]}
+            <div>
+                <PageTitle
+                    title="Works"
+                    description="A showcase of some of my projects."
                 />
+                <div className="grid md:grid-cols-2 gap-6 mt-10 border-y border-neutral-800">
+                    {showcaseProjects.map((project, idx) => (
+                        <ShowcaseCard key={project.title + idx} {...project} />
+                    ))}
+                </div>
+                <div className="space-y-10 mt-10">
+                    <Project
+                        name="Amatech Voting System"
+                        liveUrl="amatech.nurenijamiu.tech"
+                        githubUrl="https://github.com/NureniJamiu/amatech-voting-system"
+                        description="An online voting web application for the department of Management Technology, Lagos State University (LASU)."
+                        techStack={techStack[0]}
+                    />
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 
