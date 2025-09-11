@@ -2,10 +2,9 @@ import * as React from "react"
 const SvgComponent = (props) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={878}
-        height={427}
+        width={978}
+        height={527}
         fill="none"
-        viewBox="0 0 512 512"
         {...props}
     >
         <mask
