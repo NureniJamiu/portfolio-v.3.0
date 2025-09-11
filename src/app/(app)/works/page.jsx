@@ -6,6 +6,97 @@ import { techStack } from "@/mockdata/mockData";
 import { ExternalLink, GitBranch } from "lucide-react";
 import Link from "next/link";
 
+
+const showcaseProjects = [
+    {
+        title: "Marine Critical Parts Supply (MCPS)",
+        imageSrc: "/images/mcps.png",
+        videoSrc: "/videos/mcps.webm",
+        description:
+            "An easy-to-use platform that connects vessels & offshore operators with top equipment & part suppliers.",
+        devTools: [
+            "NextJS",
+            "TypeScript",
+            "TailwindCSS",
+            "Tanstack query",
+            "Framer motion",
+            "Axios",
+            "Vercel",
+        ],
+        liveUrl: "https://marinecriticalparts.com",
+    },
+    {
+        title: "Ekopulse",
+        imageSrc: "/images/ekopulse.png",
+        videoSrc: "/videos/ekopulse.webm",
+        description:
+            "A comprehensive web application designed to help citizens of Lagos, Nigeria report environmental issues and enable authorities to track and respond to them efficiently.",
+        devTools: [
+            "TypeScript",
+            "ReactJS",
+            "TailwindCSS",
+            "NodeJS",
+            "Socket.io",
+            "Leaflet",
+            "Yup",
+            "Mongoose",
+            "Cloudinary",
+            "Axios",
+            "Clerk",
+            "Vercel",
+        ],
+        liveUrl: "https://ekopulse.nurenijamiu.tech",
+    },
+    {
+        title: "Screenforge",
+        imageSrc: "/images/screenforge.png",
+        videoSrc: "/videos/screenforge.webm",
+        description:
+            "A professional screen recording tool with built-in video editing and sophisticated sharing controls.",
+        devTools: [
+            "TypeScript",
+            "ReactJS",
+            "React router",
+            "Zustand",
+            "TailwindCSS",
+            "NodeJS",
+            "PrismaORM",
+            "Postgresql",
+            "Axios",
+            "Ffmpeg",
+            "Cloudinary",
+            "Clerk",
+            "Vercel",
+        ],
+        liveUrl: "https://screenforge.nurenijamiu.tech",
+    },
+    {
+        title: "AmaLearn",
+        imageSrc: "/images/amalearn.png",
+        videoSrc: "/videos/amalearn.webm",
+        description:
+            "A comprehensive learning management system developed for the Association of Management Technology Students (AMATECH) at Lagos State University",
+        devTools: [
+            "NextJS",
+            "TypeScript",
+            "PDF parse",
+            "Zod",
+            "Zustand",
+            "TailwindCSS",
+            "PrismaORM",
+            "NodeJS",
+            "Langchain",
+            "Postgresql",
+            "PineconeDB",
+            "Axios",
+            "Cloudinary",
+            "Clerk",
+            "Vercel",
+        ],
+        liveUrl: "https://amalearn.nurenijamiu.tech",
+    },
+];
+
 const Page = () => {
     return (
         <div>
@@ -14,92 +105,14 @@ const Page = () => {
                 description="A showcase of some of my projects."
             />
             <div className="grid md:grid-cols-2 gap-6 mt-10 border-y border-neutral-800">
-                <ShowcaseCard
-                    title="Marine Critical Parts Supply (MCPS)"
-                    imageSrc="/images/mcps.png"
-                    videoSrc="/videos/mcps.webm"
-                    description="An easy-to-use platform that connects vessels & offshore operators with top equipment & part suppliers."
-                    devTools={[
-                        "NextJS",
-                        "TypeScript",
-                        "TailwindCSS",
-                        "Tanstack query",
-                        "Framer motion",
-                        "Axios",
-                        "Vercel",
-                    ]}
-                />
-                <ShowcaseCard
-                    title="Ekopulse"
-                    imageSrc="/images/ekopulse.png"
-                    videoSrc={"/videos/ekopulse.webm"}
-                    description="A comprehensive web application designed to help citizens of Lagos, Nigeria report environmental issues and enable authorities to track and respond to them efficiently."
-                    devTools={[
-                        "TypeScript",
-                        "ReactJS",
-                        "TailwindCSS",
-                        "NodeJS",
-                        "Socket.io",
-                        "Leaflet",
-                        "Yup",
-                        "Mongoose",
-                        "Cloudinary",
-                        "Axios",
-                        "Clerk",
-                        "Vercel",
-                    ]}
-                />
+                {showcaseProjects.map((project, idx) => (
+                    <ShowcaseCard key={project.title + idx} {...project} />
+                ))}
             </div>
-            <div className="grid md:grid-cols-2 gap-6 mt-10 border-y border-neutral-800">
-                <ShowcaseCard
-                    title="Screenforge"
-                    imageSrc="/images/screenforge.png"
-                    videoSrc={"/videos/screenforge.webm"}
-                    description="A professional screen recording tool with built-in video editing and sophisticated sharing controls."
-                    devTools={[
-                        "TypeScript",
-                        "ReactJS",
-                        "React router",
-                        "Zustand",
-                        "TailwindCSS",
-                        "NodeJS",
-                        "PrismaORM",
-                        "Postgresql",
-                        "Axios",
-                        "Ffmpeg",
-                        "Cloudinary",
-                        "Clerk",
-                        "Vercel",
-                    ]}
-                />
-                <ShowcaseCard
-                    title="AmaLearn"
-                    imageSrc="/images/amalearn.png"
-                    videoSrc={"/videos/amalearn.webm"}
-                    description="A comprehensive learning management system developed for the Association of Management Technology Students (AMATECH) at Lagos State University"
-                    devTools={[
-                        "NextJS",
-                        "TypeScript",
-                        "PDF parse",
-                        "Zod",
-                        "Zustand",
-                        "TailwindCSS",
-                        "PrismaORM",
-                        "NodeJS",
-                        "Langchain",
-                        "Postgresql",
-                        "PineconeDB",
-                        "Axios",
-                        "Cloudinary",
-                        "Clerk",
-                        "Vercel",
-                    ]}
-                />
-            </div>
-            <div className="space-y-10">
+            <div className="space-y-10 mt-10">
                 <Project
                     name="Amatech Voting System"
-                    // liveUrl="amatech.nurenijamiu.tech"
+                    liveUrl="amatech.nurenijamiu.tech"
                     githubUrl="https://github.com/NureniJamiu/amatech-voting-system"
                     description="An online voting web application for the department of Management Technology, Lagos State University (LASU)."
                     techStack={techStack[0]}
