@@ -102,7 +102,7 @@ export default function Home() {
                     <Divider type="border-dashed" />
                     <div className="flex items-center px-4 mt-3">
                         <span className="w-36 text-[#727272]">
-                            Carbon footprint
+                            Carbon
                         </span>
                         <span className="flex-1 font-[300] ">
                             <code className="bg-[#B8B8B8] dark:bg-[#2B2B2B] px-1 rounded group cursor-pointer">
@@ -125,7 +125,7 @@ export default function Home() {
                     <div className="flex items-center px-4 mt-3">
                         <span className="w-36 text-[#727272]">Gmail</span>
                         <span className="flex-1 font-[300]">
-                            nurenijamiu951@gmail.com
+                            me@nurenijamiu.tech
                         </span>
                     </div>
                     <Divider type="border-dashed" />
